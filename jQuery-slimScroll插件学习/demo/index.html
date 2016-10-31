@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery-slimScroll插件学习</title>
+    <style>
+        body {
+
+        }
+
+        #test {
+            max-height: 300px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div id="test">
+        slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar - similar to the one Facebook and Google started using in their products recently. slimScroll doesn't occupy any visual space as it only appears on a user initiated mouse-over. User can drag the scrollbar or use mouse-wheel to change the scroll value.
+
+        Demo and deocumentation available here: <a href="http://rocha.la/jQuery-slimScroll">jQuery slimScroll docs</a>
+
+        <h3>源代码默认配置：</h3>
+    <pre>
+{
+    width : 'auto', // 可见滚动区域宽度，默认auto（以像素为单位）
+    height : '250px',   // 可见滚动区域高度，默认250px（以像素为单位）
+    size : '7px',   // 滚动条和滚动轨迹的宽度，（以像素为单位）
+    color: '#000',  // 滚动条颜色，默认#000000
+    position : 'right', // 滚动条位置，默认right，可选：left/right
+    distance : '1px',   // 边缘和滚动条之间的距离，默认为1px（以像素为单位）
+    start : 'top',  // 滚动条初始位置，默认为top，可选：top / bottom / $('selector')[滚动区域内容元素位置]
+    opacity : .4,   // 滚动条透明度
+    alwaysVisible : false,  // 是否禁用隐藏滚动条，默认为false（当hover才显示滚动条）
+    disableFadeOut : false, // 检查当用户鼠标在滚动区域悬停并且不做任何操作，是否应该隐藏滚动条，alwaysVisible为true时该参数无效，默认false
+    railVisible : false,    // 设置滚动轨迹的可见性，默认为false
+    railColor : '#333', // 滚动轨迹颜色，默认#333
+    railOpacity : .2,   // 设置滚动轨迹透明度，默认为0.2
+    railDraggable : true,   //  是否允许拖动滚动条，滚动内容，默认为true
+    railClass : 'slimScrollRail',   // 自定义滚动条运行轨迹的class
+    barClass : 'slimScrollBar', // 自定义滚动条的class
+    wrapperClass : 'slimScrollDiv', // 自定义滚动区域wrapper的class
+    allowPageScroll : false,    //检查滚动条滚动到顶部或底部时是否允许页面滚动,默认false
+    wheelStep : 20, // 设置鼠标每步滚动值大小，默认为20px
+    touchScrollStep : 200,  // 用户使用手势触摸时的滚动值
+    borderRadius: '7px',    // 设置滚动条的border-radius
+    railBorderRadius : '7px'    // 设置滚动轨迹的border-radius
+}
+    </pre>
+
+    </div>
+</div>
+<h1>22222</h1>
+
+<h1>44444</h1>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
+<script>
+    $(function () {
+        $('#test').slimScroll({
+            height: 'auto'
+        }).bind('slimscrolling', function (e, pos) {
+            console.log("当前位置：" + pos);
+        }).bind('slimscroll', function (e, pos) {
+            console.log("到达: " + pos);
+        });
+    });
+</script>
+</body>
+</html>
