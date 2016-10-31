@@ -183,4 +183,6 @@ $("#trialForm").on('click','#Submit',function(){
 总结:
 以上是我做申请压测做的一些验证,如果有兴趣的同学们,详情api和实例可以参考下面官方链接:
 
-[validator]: https://niceue.com/validator/
+```html
+<a href="https://niceue.com/validator/">https://niceue.com/validator/</a>
+```
