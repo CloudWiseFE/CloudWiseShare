@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+.login{background: #f5f5f5;}
+.login .row{
+    padding: 170px 0 140px 0;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1067px;
+}
+.login .title{font-size: 18px; color: #40ca9f; padding-bottom: 20px; text-align: center;}
+.login .login-box{ background:#fff;max-width: 420px;min-width:320px;border: 1px solid #e5e5e5; padding: 30px; margin:0 auto;}
+.login .form-group{position: relative; padding-right: 10px; margin-bottom: 20px;}
+.login .form-control{padding: 6px 42px;border: 1px solid #e5e5e5; font-size: 14px; color: #888; box-shadow: none;}
+.login .form-control:focus {
+    border-color: #40ca9f;
+    outline: 0;
+    box-shadow: none;
+}
+.login .span-icon{position: absolute; background: #f8f8f8; left:1px; top:1px; padding:6px; border-right: 1px solid #e5e5e5}
+.login .icon-company,.login .icon-link,.login .icon-contact,.login .icon-phone,.login .icon-key{
+    background: url(../img/trial/icon-sprite.png) no-repeat;
+    display: block;
+    height:18px;
+    width: 19px;
+    vertical-align: middle;
+    padding: 10px;
+}
+.login .icon-company{
+    background-position: 0 0;
+}
+.login .icon-link{ background-position: 0 -26px;}
+.login .icon-contact{ background-position: 0 -53px;}
+.login .icon-phone{ background-position: 0 -78px;}
+.login .icon-key{ background-position: 0 -101px;}
+
+.login .has-error .form-control {
+    border-color: #fb4243;
+}
+.login .has-error .form-control:focus {
+    border-color: #fb4243;
+    box-shadow: none;
+}
+.login .form-control.input-tel{
+    width: 50%;
+}
+.login .btn.btn-orange{background: #ff9f38;position: absolute;top: 0;right: 10px; border: none; color: #fff;font-size: 14px; width: 130px; height: 34px; text-align: center; float: right;}
+.login .btn.btn-blue{background: #40ca9f;border: none; color: #fff;font-size: 16px;}
+.login .btn.btn-orange:hover,.login .btn.btn-orange:active,.login .btn.btn-orange:focus{background: #fb901d;color: #fff;}
+.login .btn.btn-blue:hover,.login .btn.btn-blue:active,.login .btn.btn-blue:focus{background: #32b88f;color: #fff;}
+
+
+.icon-star{font-size: 14px;    display: inline-block;  position: absolute;  right: 0;  top: 10px;  color: #ff0000;}
+.tip-msg{margin: 0 200px; font-size: 14px; position:absolute; background: #fff;  -webkit-box-shadow: 3px 3px 3px #bbbbbb;
+    -moz-box-shadow: 3px 3px 3px #bbbbbb;display: none;
+    box-shadow: 3px 3px 3px #bbbbbb; padding: 20px; border-radius: 5px; top:30px; color: #888888; text-align:left; }
+.tip-msg p{text-indent: 2em;}
+.tip-msg .icon-close{
+    position: absolute; right: 10px; top: 13px; color: #bbbbbb;
+    background: url(../img/trial/icon-close.png) no-repeat;
+    display: block;
+    height:14px;
+    width: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.login .help-block{display: none; position: absolute;color: #535353;font-size: 10px;left: 45px;  margin: 2px 0 0 0;}
+.login .has-error .help-block{color: #535353;}
+.btn-group-lg>.btn, .btn-lg{border-radius:4px;}
+@media screen and (max-width: 1024px){
+    .login .div-hidden{
+        display: none;
+    }
+    .login .row .col-md-6 {
+        width: 100%;
+        float: inherit;
+    }
+}
+@media screen and (max-width:960px){
+    .tip-msg{margin: 0 10px;
+        padding:10px; top:20px;}
+    .login .login-box{margin: 0 auto;}
+    .login .row{
+        padding:150px 0 140px 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:320px){
+    .login .btn.btn-orange{width: 120px;}
+}
+/*验证style*/
+.login .n-default .msg-wrap .n-icon{display: none;}
+.login .n-msg{color: #535353;}
+
+
+

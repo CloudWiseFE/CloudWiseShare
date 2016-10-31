@@ -1,0 +1,625 @@
+@media screen and (max-width : 1280px){
+    /*.index .section_item .item_con{padding: 0 10px;}*/
+    .index .item01 .item_left{padding: 0; padding-left: 120px;}
+    /*.index .item01 .item_right{padding: 45px 0  45px 110px;}*/
+    .index .item02 .item_left{padding-left: 20px;}
+    .index .item02 .item_right{padding: 20px 20px 0 50px;}
+    .index .item03 .item_left{padding: 0;width: 50%;max-width: 511px;}
+    .index .item03 .item_left .map_con{margin-left: -141px;}
+    .index .item03 .item_right{width: 48%;padding: 10px 10px 0 10px;}
+    /*案例*/
+    .box .container{width: 94%;margin: 0 auto;}
+    .case .case_list li{width: 14.285%;}
+    .case .case_list li img{max-width: 80%;}
+
+    /*分布式*/
+    .distribution .item01 .node_list ul{padding:0;margin-left: -15px;}
+    .distribution .item01 .node_list li{padding: 0 25px;}
+    .distribution .item01 .node_item{padding: 0 15px;}
+    .distribution .item01 .node_list li.single{padding-left: 15px;}
+    /*服务*/
+    .service .item01 .service_box .col-md-4{ width: 30%;display: inline-block;}
+    .service .item01 .service_box .col-md-4.boximg{width: 30%;}
+    /*landingPage*/
+    .landingPage .banner{padding-top: 100px;}
+    .landingPage .challenge h2{padding: 60px 0;}
+}
+@media screen and (max-width : 1024px){
+    .header .header_con .nav{display: none;}
+    .header .header_con .nav_btn{display: block;}
+    .footer .footer_con{padding: 0 30px;}
+    .index .banner .text_con h2{font-size: 26px;}
+    .index .banner .text_con p{font-size: 18px;}
+    .index .item01 .item_left{width: 32.5%;padding-left:20px}
+    /*.index .item01 .item_right{width: 55%;padding: 10px 0 0;}*/
+    .index .section_item .item_con h3{padding-bottom: 10px;font-size: 18px;}
+    .index .item02{padding: 40px 0 35px;}
+    .index .item02 .item_right{width: 35%;}
+    .index .item02 .item_right img{max-width: 250px;}
+    .case .section{width: 98%;margin: 0 auto;}
+    .case .case_detail{width: 90%;margin: 0 auto;margin-left: -45%;}
+    /*分布式*/
+    .distribution .item01 .node_list ul{margin-left: -10px;}
+    .distribution .item01 .node_list li{padding: 0 10px;}
+    .distribution .item01 .node_item{padding: 0 5px;}
+    .distribution .item01 .node_list li.single{width:120px;padding-left: 10px;}
+
+    /*功能*/
+    .function .section_item .item_con{width: 98%;}
+    .function .item01 .item_left{padding: 0;width: 40%;}
+    .function .item01 .item_right{width: 58%;}
+    .function .item02 .item_left{padding: 0;width: 45%;}
+    .function .item02 .item_right{width: 48.5%;}
+    .function .item02 .roundabout-holder{width: 350px;}
+    .function .item03 .item_left{width: 56%;}
+    .function .item03 .item_right{padding: 40px 0 0;width: 38%;}
+    .function .item01 .ul_list.col-md-3{width: 30%;}
+    .function .item01 .ul-img.col-md-6{width: 40%;}
+    /*关于我们*/
+    .about .mark .m_box {width:90%;}
+    /*服务*/
+    .service .service_box .boximg{margin: 0 auto;}
+
+    /*landingPage*/
+}
+@media screen and (max-width : 960px){
+    /*.index .item03 .item_left{padding-top: 5%;}*/
+    .footer{padding: 20px 0;}
+    .footer .footer_con{display: none;}
+    .footer .mobile_footer_con,.footer .copyright{display: block;}
+    .footer .mobile_footer_con .logo{display:block;width: 120px;padding: 0 0 0 10%;}
+    .footer .mobile_footer_con .logo img{width: 116px;}
+    /*.footer .mobile_footer_con .info{width: 50%;padding-top: 60px;}*/
+    .case .case_list img{max-width: 80%;margin: 0 auto;}
+    .case .tab_title .lenovo a,.case .tab_title .lenovo.active a,.case .tab_title .jiuxian a,.case .tab_title .jiuxian.active a,
+    .case .tab_title .mobile a,.case .tab_title .mobile.active a,.case .tab_title .cntv a,.case .tab_title .cntv.active a{background-size: 70%;}
+    .box .inner_banner{font-size: 20px;}
+    .distribution .item02 .platform span{margin: 0 6px;}
+    .function .section_item h2{padding-bottom: 15px;}
+    .function .item01 .item_left{margin-top: 30px;}
+    /*关于我们*/
+    .about .banner h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .about p span {
+        display: inline;
+    }
+    .about .phylogeny h3 {
+        font-size: 20px;
+    }
+    /*landingPage*/
+    .landingPage .banner h1{font-size: 30px;padding: 0 0 20px;}
+    .landingPage .banner p {font-size: 25px;}
+    .landingPage .banner div.text-c{font-size: 16px;}
+    .landingPage .challenge .list{padding: 40px 0;}
+    .landingPage .challenge .list .box-border{padding: 20px;}
+    .landingPage .platform ul li div,.landingPage .platform ul li{padding-right: 16px;}
+    .landingPage .platform ul,.lecturer .user-content{margin-bottom: 45px;}
+    .share .share-imgBox{padding: 20px 70px;}
+
+    .index .index-lp01 {border-radius: 4px; border: 1px solid #31c38c;width: 153px; margin-top: 30px; text-align:center;font-weight: normal; font-size: 20px;}
+    .index .banner .text_con h2.index-lp02 {font-size: 30px; margin-top:15px;}
+    .index .index-lp03 {color: #9ac0f4; font-size: 14px; margin: 20px 0; text-align: left;}
+    .index .index-lp04 {color: #9ac0f4; font-size: 14px; text-align: left;}
+    .index .index-lp05 {width: 152px; display: block; text-align: center; line-height: 44px; border-radius: 4px; height: 44px;background:#31c38c; color: #0c2344;font-size: 14px;margin-top: 20px;}
+    .function .item02.item02-s h2{padding-bottom: 50px;}
+    .function .item02 .feature span{font-size: 12px; padding-left: 35px;}
+    .function .item03 ul{margin-left: 9%}
+    .service .item03 .item_left.col-md-6{width: 45%; vertical-align: top; float: left;}
+    .service .item03 .item_right.col-md-5{width: 50%; float: left;}
+}
+@media screen and (max-width : 880px){
+    .function .item02 .feature{margin-top: 20px;}
+    .function .item02 .feature li{width: 33.33%;margin: 0;}
+    .function .item02 .roundabout-holder{width: 300px;}
+    /*关于我们*/
+
+    .about .banner{
+        padding: 90px 0;
+    }
+    .about .banner h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .about .mark li{
+        width: 40%;
+    }
+    .about .phylogeny .img {
+        display: none;
+    }
+    .about .phylogeny .item{
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+        float: left;
+        width: 50%;
+        margin: 0 0 20px;
+        font-size: 14px;
+    }
+    .about .phylogeny .item img{
+        visibility:visible;
+        max-width: 100px;
+    }
+    .about .phylogeny p{
+        width: 100%!important;
+        margin: 0!important;
+    }
+    .about .phy_box{ padding: 130px 10px;}
+    /*landingPage*/
+    .landingPage .platform{padding: 50px;}
+}
+@media screen and (max-width : 768px) {
+    .index .banner .text_con {
+        width: 96%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .index .banner .text_con h2 {
+        font-size: 22px;
+    }
+
+    .index .banner .text_con p {
+        font-size: 16px;
+    }
+
+    .index .section_item .item_con h3 {
+        font-size: 16px;
+    }
+
+    .index .item01 .item_right li, .index .item02 .item_left li {
+        line-height: 26px;
+    }
+
+    .distribution .item01 .node_list ul {
+        margin: 0;
+    }
+
+    .case .tab_title .lenovo a, .case .tab_title .lenovo.active a, .case .tab_title .jiuxian a, .case .tab_title .jiuxian.active a,
+    .case .tab_title .mobile a, .case .tab_title .mobile.active a, .case .tab_title .cntv a, .case .tab_title .cntv.active a {
+        background-size: 80%;
+    }
+
+    .case .case_list li {
+        width: 25%;
+        margin-top: 20px;
+    }
+
+    .distribution .item01 .node_item span, .distribution .item01 .node_item .global {
+        font-size: 26px;
+        width: 80px;
+        background-size: 100%;
+    }
+
+    .distribution .item01 .node_list li.single {
+        width: 100px;
+    }
+
+    .distribution .item02 .platform li {
+        width: 25%;
+    }
+
+    .function .item03 .item_right {
+        padding: 20px 0 0;
+    }
+    .service .item02 .platform{padding-left: 0;}
+
+
+    /*关于我们*/
+    .about .partner .slides li {
+        width: 25%;
+    }
+
+    /*landingPage*/
+    .landingPage .banner h1 {
+        font-size: 30px;
+        padding: 0 0 20px;
+    }
+
+    .landingPage .banner p {
+        font-size: 25px;
+    }
+
+    .landingPage .banner div.text-c {
+        font-size: 16px;
+    }
+
+    .landingPage .challenge .list {
+        padding: 40px 0;
+    }
+
+    .landingPage .challenge .list .box-border {
+        padding: 20px;
+    }
+
+    .landingPage .platform ul li div, .landingPage .platform ul li {
+        padding-right: 10px;
+    }
+
+    .landingPage .platform ul, .lecturer .user-content {
+        margin-bottom: 45px;
+    }
+
+    .share .share-imgBox {
+        padding: 40px 70px;
+    }
+
+    .lp-form iframe {
+        height: 640px;
+    }
+
+    .lecturer .user-box div p {
+        width: 65%;
+    }
+
+    .landingPage .challenge h2 {
+        padding: 30px 0;
+    }
+
+    .landingPage .challenge .list {
+        max-width: 660px;
+    }
+}
+
+@media screen and (max-width : 640px){
+    .index .banner img{left: 0;}
+    .index .banner .text_con p{line-height: 30px;}
+    /*.index .section_item .item_con{padding: 0 20px;}*/
+    .index .section_item .item_con img{margin: 0 auto;}
+    .index .item01 .item_left{float:none;width: 55%;margin: 0 auto;padding-left: 0;}
+    .index .item01 .item_right{float: none;width: 100%;}
+    .index .item02 .item_left{float: none;width: 100%;}
+    .index .item02 .item_right{float:none;width: 100%;max-width: 480px;padding:20px 0 0 0;margin: 0 auto;}
+    .index .item03 .item_left{float:none;width: 100%;min-height:300px;padding:20px 0 0 0;margin: 0 auto;}
+    .index .item03 .item_right{float: none;width: 100%;}
+    .box .inner_banner{font-size: 18px;}
+
+    .case .case_detail{top: 3%;}
+    .case .case_detail .case_con{padding-bottom: 20px;}
+    .case .case_detail .case_con li{margin-top: 10px;}
+    .case .case_detail .case_con li:first-child{margin-top: 20px;}
+    .case .case_detail .case_con h3{margin-bottom: 5px;}
+    .case .case_detail .case_con p{font-size: 12px;line-height: 22px;}
+    .case .case_detail .case_logo{width: 90px;right: 20px;}
+    .case .tab_title{padding: 10px 0 6px;}
+    .case .tab_title .triangle{bottom: -6px;}
+    .distribution .item01 .node_list{margin-top: 20px;}
+    .distribution .item01 .node_list li{width: 100%;padding: 0;margin-top: 20px;}
+    .distribution .item01 .node_item{padding: 0 25px;display: inline-block;float: none!important;}
+    .distribution .item01 .node_item span, .distribution .item01 .node_item .global{width: 108px;font-size: 30px;}
+    .distribution .item01 .node_list li.single{float: none!important;width: 150px;display: inline-block;}
+    .distribution .item02{padding: 40px 0 60px;}
+    .distribution .item02 .platform li{width: 33.33%;margin-top: 20px;}
+    /*功能*/
+    .function .section_item .item_con{width: 96%;}
+    .function .item01{padding: 8% 0;}
+    .function .item01 .item_left{width: 100%;max-width: 320px;margin: 0 auto;float: none;}
+    .function .item01 .item_right{width: 100%;margin-top: 30px;}
+    .function .item02{padding: 30px 0 25px;}
+    .function .item02 .item_left{width: 100%;}
+    .function .item02 .item_right{width: 100%;margin-top: 5%;}
+    .function .item02 .roundabout-holder{height: 250px;}
+    .function .item02 .feature li{width: 33.33%;margin: 0;}
+    .function .item03{padding: 30px 0 60px;}
+    .function .item03 .item_left{width: 100%;max-width: 564px;margin: 0 auto;float: none;}
+    .function .item03 .item_right{width: 100%;padding: 30px 0 0;}
+    .function .item05{padding: 35px 0 60px;}
+    .function .data-list li{width: 50%; margin-bottom: 10px;font-size: 12px;}
+    .function .item02.item02-s h2{padding-bottom: 20px}
+    .function .item03 ul{margin-left: 7%}
+    .service .item02 .platform img{width: 60px;}
+
+    /*关于我们*/
+    .about .banner{
+        min-height: 216px;
+        padding: 50px 0;
+    }
+    .about .banner h1{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 0 30px;
+    }
+    .about .phylogeny .item{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .about .phylogeny h3{
+        line-height: 20px;
+    }
+    .about .phylogeny p{
+        min-height: 60px;
+    }
+    .about .mark .text{
+        font-size: 14px;
+    }
+    .about .mark a{
+        font-size: 16px;
+        line-height: 30px;
+        width: 102px;
+        background-size: 100% 30px;
+    }
+    .about .partner .slides li{
+        width: 33.33%;
+    }
+    .about .contact li{
+        width: 100%;
+    }
+
+    /*landingPage*/
+    .landingPage .banner h1{font-size: 30px;padding: 0 0 20px;}
+    .landingPage .banner{padding: 100px 0 0}
+    .landingPage .banner p {font-size: 25px;}
+    .landingPage .banner div.text-c{font-size: 16px;}
+    .landingPage .challenge .list .box-border{padding: 20px;}
+    .landingPage .box-border .icon-bubbles{height: 53px; width: 57px;margin-right:25px;float: left;}
+    .landingPage .box-border ul{width: 84%;font-size: 13px;}
+    .landingPage .box-border ul li i{margin-right: 10px;}
+    .landingPage .platform{padding: 50px;}
+    .landingPage .platform ul li div,.landingPage .platform ul li{padding-right: 10px;}
+    .landingPage .platform ul,.lecturer .user-content{margin-bottom: 45px;}
+    .share .share-imgBox{padding: 20px 70px;}
+    .lp-footer{margin:80px auto 0 auto}
+    .landingPage .banner{min-height: 275px;}
+}
+@media screen and (max-width : 540px){
+    .case .case_list li{width: 33.33%;}
+    .footer .mobile_footer_con .logo{margin: 0 auto;}
+    .footer .info{margin-left: 40px;}
+    .function .item01 .ul_list.col-md-3{width:100%;}
+    .function .item01 .ul-img.col-md-6{width: 100%; margin: 10px 0;}
+    .function .item01  .div-box{margin-top: 30px;}
+    .function .item01 .icon-home,.function .item01 .icon-co{float: left;}
+    .function .item01 .ul_list h4{text-align: left;}
+    /*landingPage*/
+    .landingPage .banner p {font-size: 25px;}
+    .landingPage .banner div.text-c{font-size: 16px;}
+    .landingPage .challenge .list .box-border{padding: 10px;}
+    .landingPage .box-border .icon-bubbles{height: 45px;
+        width: 47px;margin-right:2px;float: left;}
+    .landingPage .box-border ul{width: 87%;font-size: 12px;}
+    .landingPage .box-border ul li{line-height: 25px;}
+    .landingPage .box-border ul li i{margin-right: 10px;}
+    .landingPage .platform{padding: 20px;}
+    .landingPage .platform ul,.lecturer .user-content{margin-bottom: 20px;}
+    .share .share-imgBox{padding: 20px;}
+    .lp-footer{margin:80px auto 0 auto}
+    .lecturer .user-box div p{min-height: 200px;}
+    .landingPage .banner div.text-r{padding-right:25px;}
+    .landingPage .banner div.text-r span{margin: 0 10px;}
+    .landingPage .challenge h2{    padding: 50px 0;}
+
+    .landingPage .banner h1{font-size: 24px;padding: 0 0 20px;}
+    .landingPage .banner{padding: 50px 0 0}
+    .landingPage .banner p {font-size: 18px;}
+    .landingPage .banner div.text-c{font-size: 16px;}
+    .landingPage .banner{min-height: 225px;}
+    .landingPage .challenge h2{padding:30px 0;}
+    .landingPage .box-border .icon-bubbles{ height: 25px;
+        width: 27px;}
+    .landingPage .box-border ul li {  line-height: 20px;  }
+    .landingPage .challenge .list {  padding: 20px 0;  }
+    .landingPage .platform ul li{ margin-bottom: 20px;    width: 100px;    margin-right: 20px;}
+    .landingPage .platform ul li div, .landingPage .platform ul li {
+        /* padding-right: 5px; */
+        width: 100px;
+    }
+    .landingPage .platform ul li:last-child{margin-right: 0;padding-right:0;}
+    .landingPage .platform i{margin-bottom: 10px;}
+    .lecturer .title, .share .title{padding: 20px;}
+    .lecturer .title .line-bg, .share .title .line-bg{width: 100%;}
+    .lecturer h2, .share h2{padding: 0 20px;}
+    .lp-footer {margin: 40px auto 0 auto;}
+    .lp-footer ul{    font-size: 12px;max-width: 250px;}
+    .landingPage .platform h2{padding: 0 0 20px 0;  font-size: 16px;}
+    .lecturer .user-box img{width: 100px; height: 130px;}
+    .lp-form iframe{width:90%;}
+    .lecturer h2, .share h2,.landingPage .challenge h2{font-size: 16px;}
+    .landingPage .banner div.text-r{padding-right:25px; margin-top: 10px;}
+    .lecturer .user-box div h4{font-size:12px;}
+    .share .share-imgBox span {  right: 20%;  bottom: 20%;  }
+    /*服务*/
+    .service .item01 .service_box .col-md-4{ width:100%;}
+    .service .item01 .service_box .col-md-4.boximg{width: 100%; margin-top: 20px;}
+    .service .service_box .box .arrow-r,.service .service_box .box .arrow-l{display: none;}
+    /*.service .item02 .platform li{ width: 42%;}*/
+    .service .item02 .platform li{background:none;}
+    .service .item02{padding-bottom: 50px;}
+    .service .item03 .item_left{margin-top: 0;}
+    .service .item03 .item_left.col-md-6{width:100%; margin-bottom: 20px;}
+    .service .item03 .item_right.col-md-6{width:100%;}
+    .service .item03 .team li{font-size: 12px;}
+    .service .icon-on, .service .icon-tw, .service .icon-th, .service .icon-fo{margin-right:10px;}
+}
+@media screen and (max-width : 480px){
+    .footer .info p{font-size: 12px;line-height: 30px;}
+    .footer .mobile_footer_con .logo{padding: 0;}
+    /*.footer .mobile_footer_con .info{margin-left: 12%;padding-top: 50px;}*/
+    .index .banner img{margin-left: -1100px;}
+    .index .banner .text_con h2{font-size: 20px;}
+    .index .banner .text_con p{font-size: 14px;margin-top: 15px;}
+    .index .item03 .item_right h4{padding: 0 0 22px;}
+    .index .item03 .item_right .icon_cntv{position: relative;top: 0;display: block;padding-bottom: 6px;}
+    .index .item03 .item_right .icon_cntv img{max-width: 129px;}
+    .index .item03 .item_right p{padding-top: 10px;}
+
+    .index .item03 .item_left .map_con img{width: 80%;}
+    .index .item03 .item_left{min-height: 240px;}
+    .index .item03 .item_left .style01{right: 1%;}
+    .index .item03 .item_left .style02{right: 20%;}
+    .index .item03 .item_left .style03{left: 20%;}
+    .index .item03 .item_left .style04{left: 1%;}
+    .index .item03 .item_left .style05{left: 20%;top: -4%;}
+    .index .item03 .item_left .style06{right: 20%;top: -4%;}
+
+    /*.index .index_foot .btn{display: block;margin: 0 auto;}*/
+    /*.index .index_foot{padding-top: 20px;height: 110px;}*/
+    .index .index_foot span{font-size: 16px;line-height: 40px;}
+    .case .tab_title .lenovo a,.case .tab_title .lenovo.active a,.case .tab_title .jiuxian a,.case .tab_title .jiuxian.active a,
+    .case .tab_title .mobile a,.case .tab_title .mobile.active a,.case .tab_title .cntv a,.case .tab_title .cntv.active a{background-size: 90%;margin: 0 5px;}
+    .case .tab_con .list{padding: 16px 0 40px;}
+    .case .tab_con .list li{float: none;width: 100%;padding-top: 20px;}
+    .case .tab_con .list .li_inner{border: 0;}
+    .case .tab_con .list p{padding-top: 10px;}
+    .case .tab_con .list .btn{position: relative;top: 0;left: 0;display:block;margin: 0 auto;}
+    .case .case_list{padding: 8px 0 50px;}
+    .case .case_list a{height: 140px;line-height: 140px;}
+    .case .case_detail{bottom: 2%;}
+    .case .case_detail .case_con{overflow: auto;}
+    .distribution .section_item h2{font-size: 18px;padding: 0 10px 12px;}
+    .distribution .section_item p{font-size: 14px;}
+    .distribution .item02 .platform li{width: 50%;}
+    /*功能*/
+    .function .section_item h2{font-size: 18px;}
+    .function .section_item p{font-size: 14px;}
+    .function .item02 .roundabout-holder{width: 240px;height: 200px;}
+    .function .item03 ul{margin-left: 11%;}
+    /*关于我们*/
+    .about .partner .slides li{
+        width: 50%;
+    }
+    /*landingPage*/
+    .landingPage .banner h1{font-size: 24px;padding: 0 0 20px;}
+    .landingPage .banner{padding: 50px 0 0}
+    .landingPage .banner p {font-size: 18px;}
+    .landingPage .banner div.text-c{font-size: 16px;}
+    .landingPage .banner{min-height: 275px;}
+    .landingPage .challenge h2{padding:30px 0;}
+    .landingPage .box-border .icon-bubbles{margin-top:80px;    height: 25px;
+        width: 27px;}
+    .landingPage .box-border ul li {  line-height: 20px;  }
+    .landingPage .challenge .list {  padding: 20px 0;  }
+    .landingPage .platform ul li{ margin-bottom: 20px;    width: 120px;    margin-right: 20px;}
+    .landingPage .platform ul li div, .landingPage .platform ul li {
+        /* padding-right: 5px; */
+        width: 120px;
+    }
+    .landingPage .platform ul li:last-child{margin-right: 0;padding-right:0;}
+    .landingPage .platform i{margin-bottom: 10px;}
+    .lecturer .user-box div p{width: 80%; min-height: 150px;}
+    .lecturer .title, .share .title{padding: 20px;}
+    .lecturer .title .line-bg, .share .title .line-bg{width: 100%;}
+    .lecturer h2, .share h2{padding: 0 20px;}
+    .lp-footer {margin: 40px auto 0 auto;}
+    .lp-footer ul{    font-size: 12px;max-width: 250px;}
+    .landingPage .platform h2{padding: 0 0 20px 0;  font-size: 16px;}
+    .lecturer .user-box img{width: 100px; height: 130px;}
+    .lp-form iframe{width:90%;}
+    .lecturer h2, .share h2,.landingPage .challenge h2{font-size: 16px;}
+    .landingPage .banner div.text-r{padding-right:25px; margin-top: 10px;}
+    .lecturer .user-box div h4{font-size:12px;}
+    .share .share-imgBox span {  right: 20%;  bottom: 20%;  }
+    .service .item03 .item_right.col-md-5{width: 100%;}
+    .service .item03 .item_right.col-md-5 ul{margin-left: 12%;}
+    .service .item03 h4{text-align: center;}
+}
+@media screen and (max-width : 400px){
+    .function .item02 .feature{margin-top: 10px;}
+    .function .item02 .feature li{width: 33.33%;margin: 0;}
+    .function .item03 ul{margin-left: 6%; }
+    .function .item02 .roundabout-holder{width: 220px;}
+    .index .banner .text_con h2{font-size: 18px;}
+    .index .banner .text_con p{font-size: 12px;}
+    /*landingPage*/
+    .landingPage .banner p{font-size: 20px;}
+    .landingPage .box-border .icon-bubbles{margin-top:90px;}
+    .landingPage .box-border ul{width: 80%;}
+    .landingPage .platform ul li{ margin-bottom: 20px; margin-right: 20px;}
+    .landingPage .platform ul li div, .landingPage .platform ul li {
+        /* padding-right: 5px; */
+        width: 120px;
+    }
+    .landingPage .platform ul li:last-child{margin-right: 0;padding-right:0;}
+    .landingPage .platform i{margin-bottom: 10px;}
+    .lecturer .title .line-bg, .share .title .line-bg{width: 100%;}
+    .lecturer h2, .share h2{padding: 0 20px;}
+    .lecturer .user-box div p{width: 80%; min-height: 180px;}
+    .share .share-imgBox span {  right: 20%;  bottom: 20%;  }
+    .service .item03 .item_right.col-md-5{ width: 100%;}
+    .service .item03 .item_right.col-md-5 ul{margin-left: 7%; width: 100%;}
+    .service .item03 h4{text-align: center;}
+
+
+}
+@media screen and (max-width : 360px){
+    .index .item01 .item_left{width: 70%;}
+    .case .case_list li{width: 50%;}
+    .case .case_list img{width: 70%;}
+    .distribution .item01 .node_item{padding: 0 20px;}
+    .distribution .item01 .node_list li.single{padding: 0;}
+    .function .item02 .roundabout-holder{width: 240px;}
+    .function .item03 ul{margin-left: 4%;}
+    .footer .mobile_footer_con .info{margin-left: 15px;}
+    .index .banner .text_con h2{font-size: 16px;}
+    /*landingPage*/
+    .landingPage .banner h1{font-size: 24px;padding: 0 0 20px;}
+    .landingPage .banner{padding: 50px 0 0}
+    .landingPage .banner p {font-size: 18px;}
+    .landingPage .banner div.text-c{font-size: 16px;}
+    .landingPage .banner{min-height: 275px;}
+    .landingPage .challenge h2{padding:30px 0;}
+    .landingPage .box-border .icon-bubbles{margin-top:100px;    height: 25px;
+        width: 27px;}
+    .landingPage .box-border ul li {  line-height: 20px;  }
+    .landingPage .challenge .list {  padding: 20px 0;  }
+    .landingPage .platform ul li{ margin-bottom: 20px;    width: 116px;    margin-right: 6px;}
+    .landingPage .platform ul li div, .landingPage .platform ul li {
+        /* padding-right: 5px; */
+        width: 116px;
+    }
+    .landingPage .platform ul li:last-child{margin-right: 0;padding-right:0;}
+    .landingPage .platform i{margin-bottom: 10px;}
+    .lecturer .user-box div p{width: 80%; min-height: 200px;}
+    .lecturer .title, .share .title{padding: 20px;}
+    .lecturer .title .line-bg, .share .title .line-bg{width: 100%;}
+    .lecturer h2, .share h2{padding: 0 20px;}
+    .lp-footer {margin: 40px auto 0 auto;}
+    .lp-footer ul{    font-size: 12px;max-width: 250px;}
+    .landingPage .platform h2{padding: 0 0 20px 0;  font-size: 16px;}
+    .lecturer .user-box img{width: 100px; height: 130px;}
+    .lp-form iframe{width:80%; height: 660px;}
+    .lecturer h2, .share h2,.landingPage .challenge h2{font-size: 16px;}
+    .landingPage .banner div.text-r{padding-right:25px; margin-top: 10px;}
+    .lecturer .user-box div h4{font-size:12px;}
+    .share .share-imgBox span {  right: 15%;  bottom: 18%;  }
+}
+@media screen and (max-width : 320px){
+    .index .item03 .item_left .img_map{margin-top: 26px;}
+    .box .inner_banner{font-size: 16px;}
+    .distribution .section_item p{font-size: 14px;}
+    .case .tab_title .lenovo a,.case .tab_title .lenovo.active a,.case .tab_title .jiuxian a,.case .tab_title .jiuxian.active a,
+    .case .tab_title .mobile a,.case .tab_title .mobile.active a,.case .tab_title .cntv a,.case .tab_title .cntv.active a{height:60px;margin: 0 3px;}
+    .function .item01 .item_left{max-width: 280px;}
+    .function .item02 .roundabout-holder{width: 200px;}
+    .function .item03 ul{margin-left: 0%}
+    .function .item02 .feature span{line-height: 20px;}
+    /*landingPage*/
+    .landingPage .platform ul, .lecturer .user-content{margin-bottom:20px;}
+    .landingPage .platform ul{margin-left: 0;}
+}
+/*bootstrap modify*/
+@media screen and (min-width : 768px){
+    .index .item02 .col-md-6{width: 50%; display: inline-block;}
+    .index .item02 .col-md-2 {
+        width: 80px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .index .item02 .col-md-8 {
+        width: 66.66666667%;
+        display: inline-block;
+    }
+}
+@media screen and (max-width : 540px){
+    .index .item02 .col-md-6{width: 100%;}
+    .index .item02 .col-md-2 {
+        width: 80px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .index .item02 .col-md-8 {
+        width: 66.66666667%;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,230 @@
+/*大体架构
+ ----------*/
+body,html {
+	font-family:'Arial','Microsoft YaHei';
+	width: 100%;
+    font-size: 0;
+}
+body{
+	position: relative;
+}
+a{ text-decoration:none;}
+input{
+    font-family:'Arial','Microsoft YaHei';
+}
+
+
+/*层级*/
+.z-index{z-index: 9;}
+
+/*清除浮动
+ --------------*/
+.clear {
+	padding: 0;
+	margin: 0;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+	clear: both;
+	line-height: 0;
+}
+.clearfix {
+  zoom: 1;
+  _height: 1px
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+/*左浮动和右浮动
+ --------------*/
+.float_l {
+	float: left;
+}
+.float_r {
+	float: right;
+}
+.float_r, .float_l {
+	_display: inline;
+}
+.text-align-l{text-align: left;}
+.text-align-r{text-align: right;}
+.cover{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.61;
+    filter: alpha(opacity=61);
+    text-indent: -1000px;
+    overflow: hidden;
+}
+.btn{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: #36b687;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.btn:hover{
+    background: #2a9f74;
+}
+/**头部**/
+.header{
+    position: relative;
+   width: 100%;
+   /*height: 46px;*/
+   padding: 7px 0;
+   background: #292929;
+}
+.header .header_con{
+    max-width: 1260px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header .header_con .logo{
+    width: 125px;
+    height: 35px;
+}
+.header .header_con .nav li{
+    float: left;
+    padding: 0 10px;
+}
+.header .header_con .nav a{
+    color: #fff;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+}
+.header .header_con .nav li a:hover,.header .header_con .nav li.active a{
+    background: #40ca9f;
+    color: #fff;
+}
+.header .header_con .nav li a:hover{background: #209f73;}
+.header .header_con .nav li a{padding: 17px 15px;}
+.header .header_con .nav .apply{
+    display: block;
+    padding: 0 12px;
+    background: #40ca9f;
+}
+.header .header_con .nav .apply:hover{
+    color: #fff;
+}
+.header .header_con .nav_btn{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin: -11px 0 0 0;
+    cursor: pointer;
+}
+.header .header_con .nav_btn span{
+    width: 28px;
+    height: 2px;
+    background: #35B5B6;
+    border-radius: 1px;
+    margin: 0 0 5px 0;
+    display: block;
+}
+.header .header_con .mobile_nav{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 999;
+}
+.header .header_con .mobile_nav a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+.header .header_con .mobile_nav a:hover{
+    color: #2a9f74;
+}
+/*footer*/
+.footer{
+    color: #fff;
+    width: 100%;
+    padding: 45px 0 38px;
+    background: #292929;
+}
+.footer .footer_con{
+    max-width: 1092px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.footer .mobile_footer_con{
+    display: none;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.footer .logo{
+    width: 116px;
+    padding-top: 10px;
+}
+.footer .info{
+    font-size: 14px;
+    padding-top: 8px;
+    margin-left: 75px;
+}
+.footer .info p{
+    line-height: 36px;
+}
+.footer .info p span{margin-right: 15px;}
+.footer .mobile_box{
+    position: relative;
+    left: 50%;
+    float: left;
+    padding-top: 20px;
+}
+.footer .mobile_con{
+    position: relative;
+    left: -50%;
+}
+.footer .mobile_footer_con h3{
+    padding-bottom: 15px;
+}
+.footer .code{
+    text-align: center;
+}
+.footer .mobile_footer_con .info{
+    padding: 0;
+}
+.footer .code img{
+    display: inline;
+    width: auto;
+}
+.footer .code span{
+    display: block;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.footer .copyright{
+    display: none;
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.footer .copyright span{
+    display: inline-block;
+}
+.footer .seriesWebsite{line-height:20px;}
+.footer .seriesWebsite a{color: #fff; padding: 10px; text-decoration: none; font-size: 14px;}
+.footer .seriesWebsite a:hover{color: #209f73; }
+.text-align-c {text-align:center;}

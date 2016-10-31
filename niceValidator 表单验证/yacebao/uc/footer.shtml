@@ -1,0 +1,64 @@
+<footer class="footer">
+    <div class="footer_con clearfix">
+        <div class="logo float_l">
+            <img src="img/footer_logo.png" alt="极致应用性能服务商云智慧">
+        </div>
+        <div class="info float_l">
+            <p>
+                联系我们：
+                <span>010-57011549</span>
+                <span>Q Q ：4006620365</span>
+                <span>邮箱：sales@cloudwise.com</span>
+            </p>
+
+            <p>版权信息：Copyright© 2009-2016 压测宝™　京ICP备09083760号　京公网安备110108007054号</p>
+
+            <p>云智慧（北京）科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京市朝阳区霞光里9号中电发展大厦A座16层</p>
+            <p class="seriesWebsite">系列网站: <a href="http://www.cloudwise.com" target="_blank">云智慧</a> | <a href="http://www.toushibao.com" target="_blank">透视宝</a> |  <a href="http://www.jiankongbao.com" target="_blank">监控宝</a></p>
+        </div>
+        <div class="code float_r">
+            <img src="img/code.jpg" alt="云智慧官方微信，涉及性能监控、性能管理和压力测试等内容">
+            <span>微信：cloudwise2014</span>
+        </div>
+    </div>
+    <div class="mobile_footer_con clearfix">
+        <a href="javascript:;" class="logo">
+            <img src="img/footer_logo.png" alt="云智慧">
+        </a>
+
+        <div class="mobile_box">
+            <div class="mobile_con clearfix">
+                <div class="code float_l">
+                    <img src="img/code.jpg" alt="二维码">
+                    <span>微信：cloudwise2014</span>
+                </div>
+                <div class="info float_l">
+                    <h3>联系我们</h3>
+
+                    <p>电话：010-57011549</p>
+
+                    <p>Q Q ：4006620365</p>
+
+                    <p>邮箱：sales@cloudwise.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">版权信息：Copyright© 2009-2016 压测宝™　京ICP备09083760号　<span>京公网安备110108007054号</span></p>
+
+    <p class="copyright">
+        云智慧（北京）科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京市朝阳区霞光里9号中电发展大厦A座16层
+    </p>
+    <p class="copyright seriesWebsite ">系列网站: <a href="http://www.cloudwise.com" target="_blank">云智慧</a> | <a href="http://www.toushibao.com" target="_blank">透视宝</a> |  <a href="http://www.jiankongbao.com" target="_blank">监控宝</a></p>
+
+</footer>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-26312629-4', 'auto');
+    ga('send', 'pageview');
+
+</script>

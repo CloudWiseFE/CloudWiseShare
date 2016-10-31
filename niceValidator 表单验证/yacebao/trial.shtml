@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>网站Web/APP性能测试、压力测试工具-压测宝</title>
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="description" content="云智慧旗下网站压测宝是网站Web或APP性能测试的必备工具，基于真实业务场景与用户行为的云端压力测试技术。只需6分钟3个步骤，即可发起百万并发访问，实现对全链路和全业务的压力测试、分布式测试、负载测试。">
+    <meta name="keywords" content="性能测试,压力测试,性能测试工具,性能测试技术,压力测试技术,压力测试工具,网站性能测试,网站压力测试,APP压力测试,APP性能测试,Web压力测试,Web性能测试">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <link href="component/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/trial.css" rel="stylesheet">
+    <link href="css/respond.css" rel="stylesheet">
+    <link href="component/niceValidator/jquery.validator.css" rel="stylesheet">
+
+    <script src="js/statistics.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+</head>
+
+<body>
+<div class="box login">
+    <!--#include file="uc/header.shtml" -->
+    <div class="row">
+        <div class="tip-msg">
+           <div>尊敬的用户：</div>
+            <p>您的信息已提交成功，我们将由专人在24小时之内与您联系，沟通需求并解答疑问，请确保您的手机处于接通状态。感谢您对云智慧的信赖，衷心祝您体验愉快！
+            </p>
+            <span class="icon-close"></span>
+        </div>
+        <div class="col-md-6 div-hidden">
+            <img alt="" src="img/trial/login-bg.png">
+        </div>
+        <div class="col-md-6">
+            <form action="" id="trialForm" >
+                <div class="login-box">
+                    <div class="title">申请压测服务</div>
+                    <div class="form-group">
+                        <span class="span-icon">
+                            <i class="icon-company" ></i>
+                        </span>
+                        <input type="text" class="form-control" name="companyName" placeholder="公司名称">
+                        <span class="icon-star">*</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="span-icon">
+                            <i class="icon-link" ></i>
+                        </span>
+                        <input type="text" class="form-control" name="siteLink" placeholder="网站链接">
+                        <span class="icon-star">*</span>
+                    </div>
+                    <div class="form-group">
+                         <span class="span-icon">
+                            <i class="icon-contact" ></i>
+                        </span>
+                        <input type="text" class="form-control" name="contact" placeholder="联系人">
+                        <span class="icon-star">*</span>
+                    </div>
+                    <div class="form-group">
+                         <span class="span-icon">
+                            <i class="icon-phone" ></i>
+                        </span>
+                        <input type="text" class="form-control " name="phone" placeholder="手机号">
+                        <span class="icon-star">*</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="span-icon">
+                            <i class="icon-key" ></i>
+                        </span>
+                        <input type="text" class="form-control input-tel" name="msgCode" placeholder="短信验证码">
+                        <input type="button" class="btn btn-orange" id="msgBtn"  value="获取验证码" />
+                        <span class="icon-star">*</span>
+
+                    </div>
+                    <div class="form-group" style="padding-top: 10px;">
+                        <button id="Submit" type="button" class="btn btn-primary btn-lg btn-block btn-blue">提交申请</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--#include file="uc/footer.shtml" -->
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/trial/trial-bk.js"></script>
+<script type="text/javascript" src="component/niceValidator/jquery.validator.min.js"></script>
+<script type="text/javascript" src="component/niceValidator/local/zh-CN.js"></script>
+
+
+
+
+<script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+    ga('create', 'UA-26312629-4', 'auto');
+
+    ga('send', 'pageview');
+
+
+
+</script>
+<script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+        jQuery('#btn-commit').click(function () {
+
+            ga('send', 'event', 'Button', 'Click', 'Submit');
+
+        });
+
+    });
+
+</script>
+</body>
+</html>

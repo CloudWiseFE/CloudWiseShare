@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="header_con clearfix">
+        <a href="index.shtml" class="logo float_l"><img src="img/logo.png" alt="云智慧旗下性能测试和压力测试产品压测宝"></a>
+        <nav class="nav float_r">
+            <ul class="clearfix">
+                <li><a href="function.shtml">产品</a></li>
+                <li><a href="distribution.shtml">服务</a></li>
+                <li><a href="cases.shtml">用户</a></li>
+                <li><a href="about.shtml">公司</a></li>
+                <li><a href="http://yacebao.com/trial.shtml" target="_blank" rel="nofollow" class="apply btn" id="apply_btn">即刻体验</a></li>
+            </ul>
+        </nav>
+        <div class="nav_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile_nav">
+            <a href="function.shtml">产品</a>
+            <a href="distribution.shtml">服务</a>
+            <li><a href="cases.shtml">用户</a></li>
+            <a href="about.shtml">关于</a>
+        </div>
+    </div>
+</header>

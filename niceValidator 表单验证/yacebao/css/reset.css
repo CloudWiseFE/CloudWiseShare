@@ -1,0 +1,12 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, abbr, address, cite, code, del, dfn, em, img, sub, sup, var, i, dl, dd, dt, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video,input{margin:0;padding:0; zoom:1;}
+article, aside, figure, footer, header, hgroup, nav, menu, section {display: block;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal;}
+input, select {	vertical-align: middle;}
+input{outline: 0;}
+textarea{resize:none;}
+a,button{outline: none;*star: expression(this.onFocus=this.blur());cursor: pointer;text-decoration:none;}
+a:hover{text-decoration:none;}
+ul,li{ list-style:none;}
+img {border: 0;vertical-align: middle;display:block;width: 100%;}
+
+
