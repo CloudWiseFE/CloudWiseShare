@@ -1,108 +1,150 @@
-## Promise
+#SeaJs
 
-###一、Promise是什么？
-Promise，就是一个对象，用来传递异步操作的消息,它代表了某个未来将要发生的事件（通常是一个异步操作）。
-  
-通俗点来说promise就是处理回调函数的一个辅助对象，可以将回调函数的操作扁平化，提高代码可读性等。
-###二、为什么出现promise？
-解决回调地狱问题，尤其是异步操作,比如:
+###SeaJs 是什么？
 
-```js
-$.get(url,function(){
-	$.get(url,function(){
-    	$.get(url,function(){
-        	$.get(url,function(){
-            	$.get(url,function(){
-                	......
-                });
-            });
-         });
-     });
-});
-```
+* **SeaJS**是一个遵循CommonJS规范的JavaScript模块加载框架，
 
-像上面的例子，在js代码中有着各种形式编写的异步回调代码，想想如果在上面的每个ajax请求之后加上各种数据处理，业务逻辑操作，一大坨代码得多恶心。
+* 可以实现JavaScript的模块化开发及加载机制。
 
-不仅如此，异步回调真正的问题在于：剥夺了使用return和throw处理的能力。
-1、无法return返回值:
+* 与jQuery等JavaScript框架不同，**SeaJS**不会扩展封装语言特性，而只是实现JavaScript的模块化及按模块加载。
 
-```js
-$.get(url,function(){
-    $.get(url,function(){
-       $.get(url,function(data){
-       		......
-            return data; // 然而这return并么有什么卵用
-        });
-    });
-});
-```
+###SeaJs 可以做什么？
 
-像上面这段代码，在异步函数里面是无法像JavaScript一个正常函数那样操作返回值的
+可以解决命名冲突、文件依赖
 
-2、无法处理错误（throw）:
+###简单说明 它带来的好处
 
-```js
-$.get(url,function(){
-    $.get(url,function(){
-        $.get(url,function(data){
-            .......
-            return data; // 然而这return并么有什么卵用
-        });
-    });
-});
-```
+####传统模式 vs SeaJS模块化
 
-###三、使用方式：
-先看效果，利用promise封装上面的ajax请求：
+假设我们现在正在开发一个Web应用TinyApp，我们决定在TinyApp中使用jQuery框架。TinyApp的首页会用到module1.js，module1.js依赖module2.js和module3.js，同时module3.js依赖module4.js。
 
-```js
-function request(url){
-    var promise = new Promise();
-    $.ajax({
-       type: "GET",
-       url: url,
-       data: "name=harry",
-       success: function(data){
-         promise.resolve(data); // 实现承诺
-       },
-       error:function(e){
-            promise.reject(e);  // 拒绝承诺
-       }
-    });
-    return promise;
-}
-```
+> ####传统开发
+> 
+> 使用传统的开发方法，各个js文件代码如下：
+> 
+	//module1.js
+	var module1 = {
+	    run: function() {
+	        return $.merge(['module1'],
+	        $.merge(module2.run(), module3.run()));
+	    }
+	}
+>
+	//module2.js
+	var module2 = {
+	    run: function() {
+	        return ['module2'];
+	    }
+	}
+>	
+	//module3.js
+	var module3 = {
+	    run: function() {
+	        return $.merge(['module3'], module4.run());
+	    }
+	}
+>	
+	//module4.js
+	var module4 = {
+	    run: function() {
+	        return ['module4'];
+	    }
+	}
 
-封装好后，可以像下面这样去调用：
+>此时index.html需要引用module1.js及其所有下层依赖（注意顺序）：
+>
+	<!DOCTYPE HTML>
+	<html lang="zh-CN">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>TinyApp</title>
+	    <script src="./jquery-min.js"></script>
+	    <script src="./module4.js"></script>
+	    <script src="./module2.js"></script>
+	    <script src="./module3.js"></script>
+	    <script src="./module1.js"></script>
+	</head>
+	<body>
+	    <p class="content"></p>
+	    <script>
+	        $('.content').html(module1.run());
+	    </script>
+	</body>
+	</html>
+>
+>随着项目的进行，js文件会越来越多，依赖关系也会越来越复杂，使得js代码和html里的script列表往往变得难以维护。
+>
 
-```js
-request(url1).then(function(data){
-    console.log('url1 success');
-    console.log(data); // 请求url1的返回结果
-    return request('url2');
-},function(error){
-    console.log('request error');
-}).then(function(data){
-   console.log('url2 success');
-   console.log(data); // 请求url2的返回结果
-});
-```
+##SeaJs 模块
 
-通过上面可以看出，promise基本上只有一个api方法，那就是then，并且then的返回值每次都是一个promise对象，而且then方法一般接收两个可选参数，第一个是“成功操作”的函数，第二个是“失败处理”函数，其实这就对应promise的两种状态了，并且还扁平化了多次请求调用的依赖，比如请求2得等请求1结束之后才调用。
+> ####SeaJS模块化开发
+下面看看如何使用SeaJS实现相同的功能。
+首先是index.html：
+> 
+可以看到html页面不再需要引入所有依赖的js文件，而只是引入一个sea.js，sea.js会处理所有依赖，加载相应的js文件，加载策略可以选择在渲染页面时一次性加载所有js文件，也可以按需加载（用到时才加载响应js），具体加载策略使用方法下文讨论。
+index.html加载了init模块，并使用此模块的initPage方法初始化页面数据，这里先不讨论代码细节。
+下面看一下模块化后JavaScript的写法：
+>
+	//jquery.js
+	define(function(require, exports, module) = {
+>	
+	    //原jquery.js代码...
+>	
+	    module.exports = $.noConflict(true);
+	});
+>	
+	//init.js
+	define(function(require, exports, module) = {
+	    var $ = require('jquery');
+	    var m1 = require('module1');
+>	
+	    exports.initPage = function() {
+	        $('.content').html(m1.run());    
+	    }
+	});
+>	
+	//module1.js
+	define(function(require, exports, module) = {
+	    var $ = require('jquery');
+	    var m2 = require('module2');
+	    var m3 = require('module3');
+>	
+	    exports.run = function() {
+	        return $.merge(['module1'], $.merge(m2.run(), m3.run()));    
+	    }
+	});
+>	
+	//module2.js
+	define(function(require, exports, module) = {
+	    exports.run = function() {
+	        return ['module2'];
+	    }
+	});
+>	
+	//module3.js
+	define(function(require, exports, module) = {
+	    var $ = require('jquery');
+	    var m4 = require('module4');
+>	
+	    exports.run = function() {
+	        return $.merge(['module3'], m4.run());    
+	    }
+	});
+>	
+	//module4.js
+	define(function(require, exports, module) = {
+	    exports.run = function() {
+	        return ['module4'];
+	    }
+	});
 
-实际上promise有三种可能的状态：
-* pending待承诺，promise初始状态
-* fulfilled实现承诺，一个承诺成功实现状态（实现方法：resolved）
-* rejected拒绝承诺，一个承诺失败的状态（实现方法：rejected）
 
-###四、总结
-对比使用Promise前后我们可以发现：
+乍看之下代码似乎变多变复杂了，这是因为这个例子太简单，如果是大型项目，SeaJS代码的优势就会显现出来。不过从这里我们还是能窥探到一些SeaJS的特性：
 
-传统异步编程通过嵌套回调函数的方式，等待异步操作结束后再执行下一步操作。然而过多的嵌套导致代码可读性差、耦合度高、扩展性低。
+* 1.是html页面不用再维护冗长的script标签列表，只要引入一个sea.js即可。
+* 2.是js代码以模块进行组织，各个模块通过require引入自己依赖的模块，代码清晰明了。
+* 通过这个例子朋友们应该对SeaJS有了一个直观的印象，下面本文具体讨论SeaJS的使用。
 
-但是通过Promise，可以扁平化代码结构，大大提高了代码可读性；并且用同步编程的方式来编写异步代码，降低了代码耦合性而提高了程序的可扩展性。
-
-注：其实在很多当前流行的框架里早就已经在应用这个模式，比如:jquery里的deferred，angular里的$q。而且在新的JavaScript标准ES6里面也已经引入了Promise模式。
 
 
 
