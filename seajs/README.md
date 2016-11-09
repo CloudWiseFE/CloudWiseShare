@@ -254,4 +254,40 @@ define对于不同参数个数的解析规则如下：
 
 	require("./module1-style.css");
 
+##seajs.use
+seajs.use主要用于载入入口模块。入口模块相当于C程序的main函数，同时也是整个模块依赖树的根。上面在TinyApp小例子中，init就是入口模块。seajs.use用法如下：
+复制代码 代码如下:
 
+单一模式
+
+	seajs.use('./a');
+
+回调模式
+
+	seajs.use('./a', function(a) {
+	  a.run();
+	});
+
+多模块模式
+
+	seajs.use(['./a', './b'], function(a, b) {
+	  a.run();
+	  b.run();
+	});
+
+一般seajs.use只用在页面载入入口模块，SeaJS会顺着入口模块解析所有依赖模块并将它们加载。如果入口模块只有一个，也可以通过给引入sea.js的script标签加入”data-main”属性来省略seajs.use，例如，上面TinyApp的index.html也可以改为如下写法：
+复制代码 代码如下:
+
+	<!DOCTYPE HTML>
+	<html lang="zh-CN">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>TinyApp</title>
+	</head>
+	<body>
+	    <p class="content"></p>
+	    <script src="./sea.js" data-main="./init"></script>
+	</body>
+	</html>
+
+这种写法会令html更加简洁。
