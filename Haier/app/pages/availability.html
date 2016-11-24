@@ -161,7 +161,7 @@
                     <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="html">
                         <label>时间范围:</label>
-                        <input type="text" class="input-h" value="2016-12-23 12:45"> - <input type="text" class="input-h" value="2016-12-24 12:45">
+                        <input type="text" class="input-h" value="2016-12-23 12:45" id="js_datepicker_start"> - <input type="text" class="input-h" value="2016-12-24 12:45" id="js_datepicker_end">
                         <label class="status">状态:</label>
                         <div class="btn-group">
                             <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-status" data-toggle="dropdown">全部</a>
@@ -180,7 +180,7 @@
                                 <div class="col-md-12">
                                     <div class="chart-box">
                                         <div class="chart-box-title">可用性</div>
-                                        <div class="chart-box-body" id="js_pie1">
+                                        <div class="chart-box-body" id="js_points">
                                         </div>
                                     </div>
                                 </div>
@@ -190,23 +190,42 @@
                         <div class="container-fluid table-panel">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="chart-box">
+                                    <div class="chart-box clearfix">
                                         <table class="table">
                                             <thead>
                                             <tr>
-                                                <th>监控  项目</th>
-                                                <th>故障原因</th>
-                                                <th>开始时间</th>
-                                                <th>恢复时间</th>
-                                                <th>故障持续时长</th>
+                                                <th>时间</th>
+                                                <th>监测点IP</th>
+                                                <th>运行商/城市</th>
+                                                <th>目标IP</th>
+                                                <th>DNS服务器</th>
+                                                <th>总下载时间(s)</th>
+                                                <th>总下载字节数(KB)</th>
+                                                <th>下载速度(KB/s)</th>
+                                                <th>错误代码</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
                                                 <td>电信</td>
                                                 <td>2016-10-11</td>
                                                 <td>0.05</td>
                                                 <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
                                                 <td>40.97</td>
                                             </tr>
                                             <tr>
@@ -215,12 +234,9 @@
                                                 <td>0.05</td>
                                                 <td>20.97</td>
                                                 <td>40.97</td>
-                                            </tr>
-                                            <tr>
-                                                <td>电信</td>
-                                                <td>2016-10-11</td>
-                                                <td>0.05</td>
-                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
                                                 <td>40.97</td>
                                             </tr>
                                             <tr>
@@ -229,12 +245,9 @@
                                                 <td>0.05</td>
                                                 <td>20.97</td>
                                                 <td>40.97</td>
-                                            </tr>
-                                            <tr>
-                                                <td>电信</td>
-                                                <td>2016-10-11</td>
-                                                <td>0.05</td>
-                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
                                                 <td>40.97</td>
                                             </tr>
                                             <tr>
@@ -243,37 +256,39 @@
                                                 <td>0.05</td>
                                                 <td>20.97</td>
                                                 <td>40.97</td>
-                                            </tr>
-                                            <tr>
-                                                <td>电信</td>
-                                                <td>2016-10-11</td>
-                                                <td>0.05</td>
-                                                <td>20.97</td>
                                                 <td>40.97</td>
-                                            </tr>
-                                            <tr>
-                                                <td>电信</td>
-                                                <td>2016-10-11</td>
-                                                <td>0.05</td>
-                                                <td>20.97</td>
                                                 <td>40.97</td>
-                                            </tr>
-                                            <tr>
-                                                <td>电信</td>
-                                                <td>2016-10-11</td>
-                                                <td>0.05</td>
-                                                <td>20.97</td>
                                                 <td>40.97</td>
-                                            </tr>
-                                            <tr>
-                                                <td>电信</td>
-                                                <td>2016-10-11</td>
-                                                <td>0.05</td>
-                                                <td>20.97</td>
                                                 <td>40.97</td>
                                             </tr>
                                             </tbody>
                                         </table>
+
+                                        <!--分页-->
+                                        <div class="page-content">
+                                            <label>每页显示</label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                    5条
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a href="#">5条</a></li>
+                                                    <li role="presentation"><a href="#">10条</a></li>
+                                                </ul>
+                                            </div>
+                                            <nav>
+                                                <ul class="pager">
+                                                    <li class="previous"><a href="#">上一页</a></li>
+                                                    <li><a href="#" class="current">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li class="etc"><a href="#">...</a></li>
+                                                    <li><a href="#">338</a></li>
+                                                    <li class="next"><a href="#">下一页</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +296,89 @@
 
                     </div>
                     <div class="tab-pane fade" id="resource">
-                        ddfdfdf
+                        <!-- 可用性资源-->
+                        <div class="container-fluid table-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box clearfix">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th width="20%">检查时间</th>
+                                                <th width="20%">监测点</th>
+                                                <th width="20%">资源类型</th>
+                                                <th width="10%">状态</th>
+                                                <th width="30%">资源URL</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <!--分页-->
+                                        <div class="page-content">
+                                            <label>每页显示</label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                    5条
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a href="#">5条</a></li>
+                                                    <li role="presentation"><a href="#">10条</a></li>
+                                                </ul>
+                                            </div>
+                                            <nav>
+                                                <ul class="pager">
+                                                    <li class="previous"><a href="#">上一页</a></li>
+                                                    <li><a href="#" class="current">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li class="etc"><a href="#">...</a></li>
+                                                    <li><a href="#">338</a></li>
+                                                    <li class="next"><a href="#">下一页</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -304,7 +401,7 @@
 
 <script src="/js/config.js"></script>
 
-<script src="/js/dashboard/index.js"></script>
+<script src="/js/availability/index.js"></script>
 
 
 </body>

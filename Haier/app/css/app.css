@@ -55,24 +55,6 @@
     border:1px solid #e5e5e5;
 }
 
-
-/*tab选项卡*/
-.nav-tabs>li{margin-bottom:0;}
-.nav-tabs>li >a{color: #616161;}
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background: none;
-    border:1px solid transparent;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #37b4b3;
-    cursor: default;
-    background: none;
-    border:none;
-    border-bottom: 2px solid #37b4b3;
-}
-.nav>li>a{padding: 10px 20px;}
-.tab-content>.tab-pane{padding: 10px 0;}
 /*==============================================================================*/
 /*  reset  */
 /*==============================================================================*/
@@ -354,6 +336,47 @@ body {
 .chart-box-body {
     height: 220px;
 }
+.page-content {
+float: right;
+}
+.page-content > .dropdown{display: inline-block}
+.page-content > nav{display: inline-block}
+
+.page-content .pager li>a, .page-content .pager li>span{
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: #dedede;
+  color: #616161;
+}
+.page-content .btn-default{
+  background: #f5f4f4;
+}
+
+.page-content .pager li>a:focus, .page-content .pager li>a:hover,.page-content .pager li.previous>a:hover,.page-content .pager li.next>a:hover{
+  background: #3598db;
+  color: #fff;
+}
+
+
+.page-content .pager li.previous>a,.page-content .pager li.next>a ,.page-content .pager li.next>span,.page-content .pager li.previous>span{
+  background: #fff;
+  margin: 0 5px;
+}
+.page-content .pager li.etc>a{
+  padding: 10px 8px;}
+
+.page-content .btn-default{
+  min-width: 70px;
+}
+.page-content label{ margin-right: 7px;}
+.page-content .dropdown{margin-right: 14px;}
+.page-content .caret{
+  color: #909aae;
+}
+
+.page-content .dropdown-menu{
+  min-width: 70px;
+}
 /*==============================================================================*/
 /* 页面page */
 /*==============================================================================*/
@@ -488,6 +511,8 @@ body {
 }
 .availability .table > tbody > tr> td{
   text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: none;
 }
 .availability .table > thead > tr> th,.availability .table > tbody > tr> td{
   padding: 20px 8px;
@@ -498,3 +523,20 @@ body {
 .availability .table > thead > tr> th:last-child{
   border-right: none;
 }
+
+.availability .nav-tabs>li{margin-bottom:0;}
+.availability .nav-tabs>li >a{color: #616161;}
+.availability .nav>li>a:focus, .availability .nav>li>a:hover {
+  text-decoration: none;
+  background: none;
+  border:1px solid transparent;
+}
+.availability .nav-tabs>li.active>a, .availability .nav-tabs>li.active>a:focus, .availability .nav-tabs>li.active>a:hover {
+  color: #37b4b3;
+  cursor: default;
+  background: none;
+  border:none;
+  border-bottom: 2px solid #37b4b3;
+}
+.availability  .nav>li>a{padding: 10px 20px;}
+.availability .tab-content>.tab-pane{padding: 10px 0;}
