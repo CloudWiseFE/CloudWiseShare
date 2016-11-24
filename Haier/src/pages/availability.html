@@ -4,7 +4,7 @@
     @@include('components/sidebar.html')
 
     <div class="main-content">
-        <!-- 当前为dashboard页面 -->
+        <!-- 当前为availability页面 -->
         <div class="availability">
             <div class="main-content-title">
                 <div class="btn-group">
@@ -13,17 +13,150 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Action</a></li>
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">电商</a></li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li><a href="#">金融</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-detection" data-toggle="dropdown"><i class="icon-redDot"></i>某某任务</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-detection">
+                        <li><a href="#"><i class="icon-redDot"></i>网站首页性能检测</a></li>
+                        <li><a href="#"><i class="icon-greenDot"></i>双十一可用性检测</a></li>
                     </ul>
                 </div>
             </div>
             <div class="main-content-body">
-                <h1>可用性</h1>
+                <!--tab选项卡-->
+                <div class="tab-panel">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">页面</a>
+                        </li>
+                        <li><a href="#ios" data-toggle="tab">资源</a></li>
 
-                <input type="text" id="js_datepicker_start">
-                <input type="text" id="js_datepicker_end">
-                <div id="js_points" style="height: 400px;"></div>
+                    </ul>
+
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                            fdfdf
+                        </div>
+                        <div class="tab-pane fade" id="ios">
+                            dfdfdf
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 可用性 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chart-box">
+                                <div class="chart-box-title">可用性</div>
+                                <div class="chart-box-body" id="js_points">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 可用性页面-->
+                <div class="container-fluid table-panel">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chart-box">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>监控项目</th>
+                                        <th>故障原因</th>
+                                        <th>开始时间</th>
+                                        <th>恢复时间</th>
+                                        <th>故障持续时长</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>电信</td>
+                                        <td>2016-10-11</td>
+                                        <td>0.05</td>
+                                        <td>20.97</td>
+                                        <td>40.97</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
