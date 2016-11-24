@@ -47,16 +47,22 @@
                         网络 <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                主机 <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
+                        <li class="dropdown dropdown-level">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">主机</a>
+                            <ul class="dropdown-menu dropdown-menu-left">
                                 <li><a href="#">主机1</a></li>
+                                <li><a href="#">主机2</a></li>
                                 <li><a href="#">主机2</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">服务器</a></li>
+                        <li class="dropdown dropdown-level">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务器</a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">服务器1</a></li>
+                                <li><a href="#">服务器2</a></li>
+                                <li><a href="#">服务器2</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li class="active"><a href="#">综合呈现</a></li>
@@ -86,31 +92,31 @@
     <!-- slider start -->
 <div class="main-sidebar">
     <ul class="nav">
-        <li><a href="">
+        <li><a href="#" id="js_main_sidebar_hide">
             <span class="icon-siderbar icon-action"></span>
             <span class="main-nav-title">收起</span>
         </a></li>
-        <li class="active"><a href="">
+        <li class="active"><a href="#">
             <span class="icon-siderbar icon-overview"></span>
             <span class="main-nav-title">概览</span>
         </a></li>
-        <li><a href="">
+        <li><a href="#">
             <span class="icon-siderbar icon-operators"></span>
             <span class="main-nav-title">运营商</span>
         </a></li>
-        <li><a href="">
+        <li><a href="#">
             <span class="icon-siderbar icon-performance"></span>
             <span class="main-nav-title">性能</span>
         </a></li>
-        <li><a href="">
+        <li><a href="#">
             <span class="icon-siderbar icon-resources"></span>
             <span class="main-nav-title">资源</span>
         </a></li>
-        <li><a href="">
+        <li><a href="#">
             <span class="icon-siderbar icon-availability"></span>
             <span class="main-nav-title">可用性</span>
         </a></li>
-        <li><a href="">
+        <li><a href="#">
             <span class="icon-siderbar icon-snapshot"></span>
             <span class="main-nav-title">快照</span>
         </a></li>
@@ -420,11 +426,10 @@
 <script src="/vender/jquery-ui-1.2.1/jquery-ui.min.js"></script>
 <script src="/vender/jquery-timepicker-addon-1.6.3/jquery-ui-timepicker-addon.min.js"></script>
 <!-- vender end -->
-
+<script src="/js/main.js"></script>
 <script src="/js/config.js"></script>
 
 <script src="/js/dashboard/index.js"></script>
-
 
 </body>
 </html>
