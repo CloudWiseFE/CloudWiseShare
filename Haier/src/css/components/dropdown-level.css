@@ -1,0 +1,16 @@
+/*==============================================================================*/
+/* 多级菜单，依赖bootstrap的dropdown插件 */
+/*==============================================================================*/
+.dropdown-level:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-level .dropdown-menu-left {
+    top: 0;
+    left: 100%;
+}
+
+.dropdown-level .dropdown-menu-right {
+    top: 0;
+    right: 100%;
+}

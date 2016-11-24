@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JKB-Haier</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="keywords" content="haier,JKB"/>
+    <meta name="description" content="JKB for Haier to do custom development">
+    <meta name="author" content="harry.lang">
+
+    <link rel="stylesheet" href="/vender/bootstrap-3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/vender/fontawesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/vender/jquery-ui-1.2.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="/vender/jquery-timepicker-addon-1.6.3/jquery-ui-timepicker-addon.min.css"/>
+    <link rel="stylesheet" href="/css/app.min.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="/vender/html5shiv-3.3.7/html5shiv.min.js"></script>
+    <script src="/vender/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!-- header start -->
+<header class="main-header navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-header .navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="main-logo" src="/img/main-logo.png" alt="海尔用户体验监控平台"/>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        网络 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown dropdown-level">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">主机</a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">主机1</a></li>
+                                <li><a href="#">主机2</a></li>
+                                <li><a href="#">主机2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-level">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务器</a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">服务器1</a></li>
+                                <li><a href="#">服务器2</a></li>
+                                <li><a href="#">服务器2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">综合呈现</a></li>
+                <li><a href="#">连续监控</a></li>
+                <li><a href="#">快速检测</a></li>
+                <li><a href="#">告警管理</a></li>
+                <li><a href="#">用户管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">
+                    <span class="fa fa-question-circle"></span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa icon-flag"></span>
+                </a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="fa fa-user-o"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right users">
+                        <li><a href="#"><i class="icon-users icon-personal"></i>个人资料</a></li>
+                        <li><a href="#"><i class="icon-users icon-psw"></i>修改密码</a></li>
+                        <li><a href="#"><i class="icon-users icon-notice"></i>通知设置</a></li>
+                        <li><a href="#"><i class="icon-users icon-logout"></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+
+<div class="main-container">
+    <!-- slider start -->
+<div class="main-sidebar">
+    <ul class="nav">
+        <li><a href="#" id="js_main_sidebar_hide">
+            <span class="icon-siderbar icon-action"></span>
+            <span class="main-nav-title">收起</span>
+        </a></li>
+        <li ><a href="/pages/dashboard.html">
+            <span class="icon-siderbar icon-overview"></span>
+            <span class="main-nav-title">概览</span>
+        </a></li>
+        <li ><a href="/pages/operators.html">
+            <span class="icon-siderbar icon-operators"></span>
+            <span class="main-nav-title">运营商</span>
+        </a></li>
+        <li><a href="#">
+            <span class="icon-siderbar icon-performance"></span>
+            <span class="main-nav-title">性能</span>
+        </a></li>
+        <li><a href="#">
+            <span class="icon-siderbar icon-resources"></span>
+            <span class="main-nav-title">资源</span>
+        </a></li>
+        <li class="active"><a href="/pages/availability.html">
+            <span class="icon-siderbar icon-availability"></span>
+            <span class="main-nav-title">可用性</span>
+        </a></li>
+        <li><a href="#">
+            <span class="icon-siderbar icon-snapshot"></span>
+            <span class="main-nav-title">快照</span>
+        </a></li>
+    </ul>
+</div>
+<!-- slider end -->
+
+    <div class="main-content">
+        <!-- 当前为availability页面 -->
+        <div class="availability">
+            <div class="main-content-title">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">全部分组</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">电商</a></li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li><a href="#">金融</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-detection" data-toggle="dropdown"><i class="icon-redDot"></i>某某任务</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-detection">
+                        <li><a href="#"><i class="icon-redDot"></i>网站首页性能检测</a></li>
+                        <li><a href="#"><i class="icon-greenDot"></i>双十一可用性检测</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content-body">
+                <!--tab选项卡-->
+                <div class="tab-panel">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#html" data-toggle="tab">页面</a>
+                        </li>
+                        <li><a href="#resource" data-toggle="tab">资源</a></li>
+
+                    </ul>
+
+                    <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="html">
+                        <label>时间范围:</label>
+                        <input type="text" class="input-h" value="2016-12-23 12:45" id="js_datepicker_start"> - <input type="text" class="input-h" value="2016-12-24 12:45" id="js_datepicker_end">
+                        <label class="status">状态:</label>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-status" data-toggle="dropdown">全部</a>
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">状态1</a></li>
+                                <li><a href="#">状态2</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 性能 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box">
+                                        <div class="chart-box-body" id="js_points">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 可用性页面-->
+                        <div class="container-fluid table-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box clearfix">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>时间</th>
+                                                <th>监测点IP</th>
+                                                <th>运行商/城市</th>
+                                                <th>目标IP</th>
+                                                <th>DNS服务器</th>
+                                                <th>总下载时间(s)</th>
+                                                <th>总下载字节数(KB)</th>
+                                                <th>下载速度(KB/s)</th>
+                                                <th>错误代码</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!--分页-->
+                                        <div class="page-content">
+  <label>每页显示</label>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+      5条
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="#">5条</a></li>
+      <li role="presentation"><a href="#">10条</a></li>
+    </ul>
+  </div>
+  <nav>
+    <ul class="pager">
+      <li class="previous"><a href="#">上一页</a></li>
+      <li><a href="#" class="current">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li class="etc"><a href="#">...</a></li>
+      <li><a href="#">338</a></li>
+      <li class="next"><a href="#">下一页</a></li>
+    </ul>
+  </nav>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="resource">
+                        <!-- 可用性资源-->
+                        <div class="container-fluid table-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box clearfix">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th width="20%">检查时间</th>
+                                                <th width="20%">监测点</th>
+                                                <th width="20%">资源类型</th>
+                                                <th width="10%">状态</th>
+                                                <th width="30%">资源URL</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <!--分页-->
+                                        <div class="page-content">
+  <label>每页显示</label>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+      5条
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a href="#">5条</a></li>
+      <li role="presentation"><a href="#">10条</a></li>
+    </ul>
+  </div>
+  <nav>
+    <ul class="pager">
+      <li class="previous"><a href="#">上一页</a></li>
+      <li><a href="#" class="current">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li class="etc"><a href="#">...</a></li>
+      <li><a href="#">338</a></li>
+      <li class="next"><a href="#">下一页</a></li>
+    </ul>
+  </nav>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- vender start -->
+<script src="/vender/seajs-2.3.0/sea.js"></script>
+<script src="/vender/jquery-1.12.4/jquery.min.js"></script>
+<script src="/vender/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="/vender/echarts-2.2.8/echarts-all.js"></script>
+<script src="/vender/jquery-ui-1.2.1/jquery-ui.min.js"></script>
+<script src="/vender/jquery-timepicker-addon-1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+<!-- vender end -->
+<script src="/js/main.js"></script>
+<script src="/js/config.js"></script>
+
+<script src="/js/availability/index.js"></script>
+
+</body>
+</html>
+

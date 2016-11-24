@@ -1,0 +1,54 @@
+.availability .tab-panel{
+  margin-left: 15px;
+}
+.availability input.input-h{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+
+}
+.availability label.status{ margin-left: 50px;}
+.availability .dropdown-toggle-status{
+  width: 136px;
+  text-align: left;
+}
+
+.availability .container-fluid{ padding-left:0; margin-top: 10px;}
+
+.availability .table > thead > tr> th{
+  background: #7dcaef;
+  color: #fff;
+  text-align: center;
+
+}
+.availability .table > tbody > tr> td{
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: none;
+}
+.availability .table > thead > tr> th,.availability .table > tbody > tr> td{
+  padding: 20px 8px;
+}
+.availability .table > thead > tr> th{
+  border-right: 1px solid #c5d7e0;
+}
+.availability .table > thead > tr> th:last-child{
+  border-right: none;
+}
+
+.availability .nav-tabs>li{margin-bottom:0;}
+.availability .nav-tabs>li >a{color: #616161;}
+.availability .nav>li>a:focus, .availability .nav>li>a:hover {
+  text-decoration: none;
+  background: none;
+  border:1px solid transparent;
+}
+.availability .nav-tabs>li.active>a, .availability .nav-tabs>li.active>a:focus, .availability .nav-tabs>li.active>a:hover {
+  color: #37b4b3;
+  cursor: default;
+  background: none;
+  border:none;
+  border-bottom: 2px solid #37b4b3;
+}
+.availability  .nav>li>a{padding: 10px 20px;}
+.availability .tab-content>.tab-pane{padding: 10px 0;}

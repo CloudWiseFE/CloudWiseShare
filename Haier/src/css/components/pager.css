@@ -1,0 +1,41 @@
+.page-content {
+float: right;
+}
+.page-content > .dropdown{display: inline-block}
+.page-content > nav{display: inline-block}
+
+.page-content .pager li>a, .page-content .pager li>span{
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: #dedede;
+  color: #616161;
+}
+.page-content .btn-default{
+  background: #f5f4f4;
+}
+
+.page-content .pager li>a:focus, .page-content .pager li>a:hover,.page-content .pager li.previous>a:hover,.page-content .pager li.next>a:hover{
+  background: #3598db;
+  color: #fff;
+}
+
+
+.page-content .pager li.previous>a,.page-content .pager li.next>a ,.page-content .pager li.next>span,.page-content .pager li.previous>span{
+  background: #fff;
+  margin: 0 5px;
+}
+.page-content .pager li.etc>a{
+  padding: 10px 8px;}
+
+.page-content .btn-default{
+  min-width: 70px;
+}
+.page-content label{ margin-right: 7px;}
+.page-content .dropdown{margin-right: 14px;}
+.page-content .caret{
+  color: #909aae;
+}
+
+.page-content .dropdown-menu{
+  min-width: 70px;
+}

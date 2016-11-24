@@ -1,0 +1,304 @@
+@@include('components/header.html')
+
+<div class="main-container">
+    @@include('components/sidebar.html', {"page":"dashboard"})
+
+    <div class="main-content">
+        <!-- 当前为dashboard页面 -->
+        <div class="dashboard">
+            <div class="main-content-title">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">全部分组</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">电商</a></li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li><a href="#">金融</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-detection" data-toggle="dropdown"><i class="icon-redDot"></i>某某任务</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-detection">
+                        <li><a href="#"><i class="icon-redDot"></i>网站首页性能检测</a></li>
+                        <li><a href="#"><i class="icon-greenDot"></i>双十一可用性检测</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group pull-right time-panel">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">最近30分钟</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" >
+                        <li>
+                            <a href="#" class="active">最近30分钟</a>
+                            <a href="#">最近1小时</a>
+                            <a href="#">最近3小时</a>
+                            <a href="#">最近6小时</a>
+                            <a href="#">最近12小时</a>
+                            <a href="#">最近1天</a>
+                            <a href="#">最近3天</a>
+                            <a href="#">最近7天</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content-body">
+                <!-- 可用性 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">可用性</div>
+                                <div class="chart-box-body" id="js_pie1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">页面性能</div>
+                                <div class="chart-box-body" id="js_pie2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">内容可用性</div>
+                                <div class="chart-box-body" id="js_pie3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">资源性能</div>
+                                <div class="chart-box-body" id="js_radar4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 首屏时间 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="chart-box">
+                                <div class="chart-box-title">首屏时间</div>
+                                <div class="set-up">
+                                    <button type="button" class="btn btn-default">设置</button>
+                                </div>
+                                <div class="chart-box-body fc_map" id="js_map">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">运营商首屏时间统计（ms）</div>
+                                <div class="chart-box-body fc_time" id="js_fc_time">
+                                </div>
+                            </div>
+                            <div class="chart-box">
+                                <div class="chart-box-title">首屏时间最慢Top10（ms）</div>
+                                <div class="chart-box-body" id="js_top10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 故障历史 and 最新告警消息-->
+                <div class="container-fluid table-panel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chart-box">
+                                <h3>历史故障</h3>
+                                <p>今日共有123条故障历史，目前尚有4条未恢复，显示您可能最关心的10条</p>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>监控项目</th>
+                                            <th>故障原因</th>
+                                            <th>开始时间</th>
+                                            <th>恢复时间</th>
+                                            <th>故障持续时长</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电信</td>
+                                            <td>2016-10-11</td>
+                                            <td>0.05</td>
+                                            <td>20.97</td>
+                                            <td>40.97</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="chart-box">
+                                <h3>最新告警消息(TOP10)</h3>
+                                <p>今日共有23个项目发送过1359个告警消息，至今有12个项目未修复</p>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th width="15%"></th>
+                                            <th>检查时间</th>
+                                            <th>消息</th>
+                                            <th>监控项目</th>
+                                            <th>所在区域/服务器</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-remind"></i> <i class="icon-alarmStatus icon-green"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-secondary"></i> <i class="icon-alarmStatus icon-grey"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-serious"></i> <i class="icon-alarmStatus icon-red"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-urgent"></i> <i class="icon-alarmStatus icon-yellow"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-remind"></i> <i class="icon-alarmStatus icon-green"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-secondary"></i> <i class="icon-alarmStatus icon-grey"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-serious"></i> <i class="icon-alarmStatus icon-red"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>登录</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-urgent"></i> <i class="icon-alarmStatus icon-yellow"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>注册</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-urgent"></i> <i class="icon-alarmStatus icon-yellow"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>登录</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><i class="icon-alarmMsg icon-remind"></i> <i class="icon-alarmStatus icon-green"></i></td>
+                                            <td>2016-10-11</td>
+                                            <td>无法获取数据</td>
+                                            <td>票价查询</td>
+                                            <td>127.0.0.1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('components/footer.html', {"page":"dashboard"})
+

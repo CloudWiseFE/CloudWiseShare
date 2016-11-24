@@ -1,0 +1,232 @@
+@@include('components/header.html')
+
+<div class="main-container">
+    @@include('components/sidebar.html', {"page":"availability"})
+
+    <div class="main-content">
+        <!-- 当前为availability页面 -->
+        <div class="availability">
+            <div class="main-content-title">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">全部分组</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">电商</a></li>
+                        <li>
+                            <a href="#">旅游</a>
+                        </li>
+                        <li><a href="#">金融</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-detection" data-toggle="dropdown"><i class="icon-redDot"></i>某某任务</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-detection">
+                        <li><a href="#"><i class="icon-redDot"></i>网站首页性能检测</a></li>
+                        <li><a href="#"><i class="icon-greenDot"></i>双十一可用性检测</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content-body">
+                <!--tab选项卡-->
+                <div class="tab-panel">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#html" data-toggle="tab">页面</a>
+                        </li>
+                        <li><a href="#resource" data-toggle="tab">资源</a></li>
+
+                    </ul>
+
+                    <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="html">
+                        <label>时间范围:</label>
+                        <input type="text" class="input-h" value="2016-12-23 12:45" id="js_datepicker_start"> - <input type="text" class="input-h" value="2016-12-24 12:45" id="js_datepicker_end">
+                        <label class="status">状态:</label>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-status" data-toggle="dropdown">全部</a>
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">状态1</a></li>
+                                <li><a href="#">状态2</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 性能 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box">
+                                        <div class="chart-box-body" id="js_points">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 可用性页面-->
+                        <div class="container-fluid table-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box clearfix">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>时间</th>
+                                                <th>监测点IP</th>
+                                                <th>运行商/城市</th>
+                                                <th>目标IP</th>
+                                                <th>DNS服务器</th>
+                                                <th>总下载时间(s)</th>
+                                                <th>总下载字节数(KB)</th>
+                                                <th>下载速度(KB/s)</th>
+                                                <th>错误代码</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!--分页-->
+                                        @@include('components/pager.html')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="resource">
+                        <!-- 可用性资源-->
+                        <div class="container-fluid table-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box clearfix">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th width="20%">检查时间</th>
+                                                <th width="20%">监测点</th>
+                                                <th width="20%">资源类型</th>
+                                                <th width="10%">状态</th>
+                                                <th width="30%">资源URL</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-10-11 11:30:26</td>
+                                                <td>117.131.245.75</td>
+                                                <td>中国移动/天津市</td>
+                                                <td>117.131.245.75</td>
+                                                <td>117.131.245.75</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <!--分页-->
+                                        @@include('components/pager.html')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('components/footer.html', {"page":"availability"})
+

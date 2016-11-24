@@ -1,0 +1,118 @@
+.main-sidebar {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    width: 100px;
+}
+
+.main-sidebar .nav > li > a {
+    color: #666666;
+    padding: 16px 10px;
+}
+
+.main-sidebar .nav > li.active > a, .main-sidebar .nav > li > a:hover {
+    background-color: #60bbc7;
+    color: #ffffff;
+}
+
+.main-nav-title {
+    font-size: 13px;
+}
+
+.main-sidebar .nav > li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main-sidebar .nav > li:last-child {
+    border-bottom: none;
+}
+
+.main-sidebar .nav > li > a > span.icon-siderbar {
+    background: url('/img/icon-siderbar.png') no-repeat;
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    vertical-align: middle;
+
+}
+
+.main-sidebar .nav > li > a > span.icon-action {
+    background-position: 0 0;
+}
+
+.main-sidebar .nav > li > a > span.icon-overview {
+    background-position: 0 -26px;
+}
+
+.main-sidebar .nav > li > a > span.icon-operators {
+    background-position: 0 -54px;
+}
+
+.main-sidebar .nav > li > a > span.icon-performance {
+    background-position: 0 -81px;
+}
+
+.main-sidebar .nav > li > a > span.icon-resources {
+    background-position: 0 -108px;
+}
+
+.main-sidebar .nav > li > a > span.icon-availability {
+    background-position: 0 -134px;
+}
+
+.main-sidebar .nav > li > a > span.icon-snapshot {
+    background-position: 0 -162px;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-action,
+.main-sidebar .nav > li.active > a > span.icon-action {
+    background-position: -25px 0;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-overview,
+.main-sidebar .nav > li.active > a > span.icon-overview {
+    background-position: -25px -26px;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-operators,
+.main-sidebar .nav > li.active > a > span.icon-operators {
+    background-position: -25px -54px;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-performance,
+.main-sidebar .nav > li.active > a > span.icon-performance {
+    background-position: -25px -81px;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-resources,
+.main-sidebar .nav > li.active > a > span.icon-resources {
+    background-position: -25px -108px;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-availability,
+.main-sidebar .nav > li.active > a > span.icon-availability {
+    background-position: -25px -134px;
+}
+
+.main-sidebar .nav > li > a:hover > span.icon-snapshot,
+.main-sidebar .nav > li.active > a > span.icon-snapshot {
+    background-position: -25px -162px;
+}
+
+/*==============================================================================*/
+/* 左侧文本隐藏样式操作 */
+/*==============================================================================*/
+.main-sidebar-lt .main-nav-title {
+    display: none;
+}
+
+.main-sidebar-lt .main-sidebar {
+    width: 40px;
+}
+
+.main-sidebar-lt .main-container {
+    padding-left: 40px;
+}
+
