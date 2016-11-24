@@ -1,0 +1,33 @@
+@@include('components/header.html')
+
+<div class="main-container">
+    @@include('components/sidebar.html')
+
+    <div class="main-content">
+        <!-- 当前为dashboard页面 -->
+        <div class="availability">
+            <div class="main-content-title">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">全部分组</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content-body">
+                <h1>可用性</h1>
+
+                <input type="text" id="js_datepicker_start">
+                <input type="text" id="js_datepicker_end">
+                <div id="js_points" style="height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('components/footer.html', {"page":"availability"})
+
