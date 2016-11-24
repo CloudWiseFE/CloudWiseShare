@@ -38,10 +38,10 @@
     background-color: #60bbc7;
 }
 
-.dashboard .main-content-title .btn .caret{
+.main-content-title .btn .caret{
     color: #828282;
 }
-.dashboard .main-content-title .icon-redDot,.dashboard .main-content-title .icon-greenDot{
+ .main-content-title .icon-redDot, .main-content-title .icon-greenDot{
     width: 11px;
     height: 11px;
     border-radius: 50%;
@@ -50,15 +50,15 @@
     vertical-align: middle;
     margin-right: 5px;
 }
-.dashboard .main-content-title .icon-greenDot{
+.main-content-title .icon-greenDot{
     background: #0aa70a;
 }
 
-.dashboard .main-content-title  .dropdown-toggle-detection{
+ .main-content-title  .dropdown-toggle-detection{
     width: 270px;
     text-align: left;
 }
-.dashboard .main-content-title  .dropdown-menu-detection{
+ .main-content-title  .dropdown-menu-detection{
     width: 295px;
 }
 

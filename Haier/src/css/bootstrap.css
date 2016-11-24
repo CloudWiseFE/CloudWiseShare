@@ -39,6 +39,8 @@
     border-color: #e5e5e5;
     margin: -1px 0 0;
 }
+
+
 /*table*/
 .table>thead>tr>th{
     border-bottom: 1px solid #e5e5e5;
@@ -48,4 +50,15 @@
 }
 .table-striped{
     border:1px solid #e5e5e5;
+}
+
+
+/*tab选项卡*/
+.nav-tabs>li{margin-bottom:0;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #616161;
+    cursor: default;
+    background: none;
+    border:none;
+    border-bottom: 2px solid #37b4b3;
 }
