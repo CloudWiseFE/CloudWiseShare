@@ -50,3 +50,14 @@
 .main-header .navbar-right a {
     border-left: 1px solid #6ec1cc;
 }
+.main-header .navbar-right a span{
+    font-size: 16px;
+}
+.icon-flag {
+    background: url('/img/flag/china.png') no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+
+}

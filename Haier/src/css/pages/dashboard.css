@@ -5,3 +5,101 @@
 .dashboard .fc_time {
     height: 187px;
 }
+.dashboard .table-panel .chart-box > h3{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #7b848e;
+
+}
+.dashboard .table-panel .chart-box > p{
+    color: #999;
+    margin-bottom: 20px;
+}
+.dashboard .time-panel > .dropdown-menu{
+    width: 720px;
+}
+.dashboard .time-panel > .dropdown-menu>li{
+    padding: 15px;
+}
+.dashboard .time-panel > .dropdown-menu>li>a {
+    display: inline-block;
+}
+.dashboard .time-panel > .dropdown-menu>li>a{
+    border-radius: 2px;
+    border:1px solid #e5e5e5;
+    background: #fafafa;
+}
+
+.dashboard .time-panel > .dropdown-menu>li>a:focus,.dashboard .time-panel > .dropdown-menu>li>a:hover{
+    color: #fff;
+    border-radius: 2px;
+    border:1px solid #60bbc7;
+    background-color: #60bbc7;
+}
+
+.dashboard .main-content-title .btn .caret{
+    color: #828282;
+}
+.dashboard .main-content-title .icon-redDot,.dashboard .main-content-title .icon-greenDot{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #ff0000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.dashboard .main-content-title .icon-greenDot{
+    background: #0aa70a;
+}
+
+.dashboard .main-content-title  .dropdown-toggle-detection{
+    width: 270px;
+    text-align: left;
+}
+.dashboard .main-content-title  .dropdown-menu-detection{
+    width: 295px;
+}
+
+.dashboard .table-panel .icon-alarmMsg{
+     display: inline-block;
+     vertical-align: middle;
+     width: 16px;
+     height: 16px;
+     margin-right: 5px;
+ }
+.dashboard .table-panel .icon-remind{
+    background: url('/img/alarm-msg/remind.png') no-repeat;
+}
+.dashboard .table-panel .icon-secondary{
+    background: url('/img/alarm-msg/secondary.png') no-repeat;
+}
+.dashboard .table-panel .icon-serious{
+    background: url('/img/alarm-msg/serious.png') no-repeat;
+}
+
+
+.dashboard .table-panel .icon-urgent{
+    background: url('/img/alarm-msg/urgent.png') no-repeat;
+}
+
+.dashboard .table-panel .icon-alarmStatus{
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;}
+.dashboard .table-panel .icon-green{
+    background: url('/img/alarm-status/green.png') no-repeat;
+}
+.dashboard .table-panel .icon-grey{
+    background: url('/img/alarm-status/grey.png') no-repeat;
+}
+.dashboard .table-panel .icon-red{
+    background: url('/img/alarm-status/red.png') no-repeat;
+}
+
+
+.dashboard .table-panel .icon-yellow{
+    background: url('/img/alarm-status/yellow.png') no-repeat;
+}

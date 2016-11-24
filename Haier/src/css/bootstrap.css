@@ -1,3 +1,4 @@
+/*下拉菜单*/
 .dropdown-menu {
     padding: 0;
     -webkit-border-radius: 0;
@@ -8,9 +9,43 @@
 .dropdown-menu > li > a {
     padding: 10px;
 }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    color: #fff;
+    background-color: #60bbc7;
+}
 
 .btn-group > .btn {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+}
+.btn-default{
+    border-color: #e5e5e5;
+}
+.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default:active:focus,.open>.dropdown-toggle.btn-default:focus {
+    color: #333;
+    background-color: #fff;
+    border-color: #e5e5e5;
+}
+.btn-group.open .dropdown-toggle {
+     -webkit-box-shadow: none;
+     box-shadow: none;
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default,.open>.dropdown-toggle.btn-default:hover{
+    border-color: #e5e5e5;
+    background-color:#fff;
+}
+.dropdown-menu{
+    border-color: #e5e5e5;
+    margin: -1px 0 0;
+}
+/*table*/
+.table>thead>tr>th{
+    border-bottom: 1px solid #e5e5e5;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border-top: 1px solid #e5e5e5;
+}
+.table-striped{
+    border:1px solid #e5e5e5;
 }

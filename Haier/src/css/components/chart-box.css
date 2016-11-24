@@ -2,10 +2,13 @@
     background: #ffffff;
     border: 1px solid #e5e5e5;
     padding: 12px;
+    margin-bottom: 10px;
 }
 
 .chart-box-title {
     font-size: 13px;
+    color: #7b848e;
+    font-weight: bold;
 }
 
 .chart-box-title:before, .chart-box-title:after {
