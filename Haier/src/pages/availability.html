@@ -37,126 +37,141 @@
                 <div class="tab-panel">
                     <ul class="nav nav-tabs">
                         <li class="active">
-                            <a href="#home" data-toggle="tab">页面</a>
+                            <a href="#html" data-toggle="tab">页面</a>
                         </li>
-                        <li><a href="#ios" data-toggle="tab">资源</a></li>
+                        <li><a href="#resource" data-toggle="tab">资源</a></li>
 
                     </ul>
 
                     <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade in active" id="home">
-                        fdfdf
+                    <div class="tab-pane fade in active" id="html">
+                        <label>时间范围:</label>
+                        <input type="text" class="input-h" value="2016-12-23 12:45"> - <input type="text" class="input-h" value="2016-12-24 12:45">
+                        <label class="status">状态:</label>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-status" data-toggle="dropdown">全部</a>
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">状态1</a></li>
+                                <li><a href="#">状态2</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 可用性 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box">
+                                        <div class="chart-box-title">可用性</div>
+                                        <div class="chart-box-body" id="js_pie1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 可用性页面-->
+                        <div class="container-fluid table-panel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="chart-box">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>监控项目</th>
+                                                <th>故障原因</th>
+                                                <th>开始时间</th>
+                                                <th>恢复时间</th>
+                                                <th>故障持续时长</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>电信</td>
+                                                <td>2016-10-11</td>
+                                                <td>0.05</td>
+                                                <td>20.97</td>
+                                                <td>40.97</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="tab-pane fade" id="ios">
-                        dfdfdf
+                    <div class="tab-pane fade" id="resource">
+                        ddfdfdf
                     </div>
                 </div>
                 </div>
 
-                <!-- 可用性 -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="chart-box">
-                                <div class="chart-box-title">可用性</div>
-                                <div class="chart-box-body" id="js_pie1">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 可用性页面-->
-                <div class="container-fluid table-panel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="chart-box">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>监控项目</th>
-                                            <th>故障原因</th>
-                                            <th>开始时间</th>
-                                            <th>恢复时间</th>
-                                            <th>故障持续时长</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td>电信</td>
-                                            <td>2016-10-11</td>
-                                            <td>0.05</td>
-                                            <td>20.97</td>
-                                            <td>40.97</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </div>

@@ -55,10 +55,18 @@
 
 /*tab选项卡*/
 .nav-tabs>li{margin-bottom:0;}
+.nav-tabs>li >a{color: #616161;}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background: none;
+    border:1px solid transparent;
+}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #616161;
+    color: #37b4b3;
     cursor: default;
     background: none;
     border:none;
     border-bottom: 2px solid #37b4b3;
 }
+.nav>li>a{padding: 10px 20px;}
+.tab-content>.tab-pane{padding: 10px 0;}

@@ -29,5 +29,5 @@ seajs.use([], function () {
         ]
     };
     pie1.setOption(option1);
-    
+
 });
