@@ -1,120 +1,69 @@
 seajs.use([], function () {
-    // 时间控件
-    $("#js_datepicker_start").datetimepicker({
-        onSelect: function () {
-            console.log(arguments);
-        }
-    });
-    $("#js_datepicker_end").datetimepicker({
-        onSelect: function () {
-            console.log(arguments);
-        }
-    });
 
-    // 散点图
-    var datetimes = [
-        '2016-11-11 11:00', '2016-11-11 12:00', '2016-11-11 13:00',
-        '2016-11-11 14:00', '2016-11-11 15:00', '2016-11-11 16:00',
-        '2016-11-11 17:00'
-    ];
-    var pointsChart = echarts.init($('#js_points').get());
+    var barChart = echarts.init($('#js_bar').get());
     var option = {
         title: {
             show: false
         },
+        grid: {
+            y: 20
+        },
         tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                show: true,
-                type: 'cross',
-                lineStyle: {
-                    type: 'dashed',
-                    width: 1
-                }
-            }
+            trigger: 'axis'
         },
         legend: {
-            data: ['正常', '警告', '内容错误', '页面错误'],
-            y: 'bottom'
+            y: 'bottom',
+            data: ['最小延时(ms)', '平均延时(ms)', '最大延时(ms)', '最小丢包率(%)', '平均丢包率(%)', '最大丢包率(%)']
         },
         xAxis: [
             {
-                type: 'value',
-                axisLabel: {
-                    formatter: function (value) {
-                        return datetimes[value];
-                    }
-                },
-                axisTick: {
-                    show: true
-                }
+                type: 'category',
+                data: ['电信', '联通', '移动', '教育网', '海外']
             }
         ],
         yAxis: [
             {
                 type: 'value',
-                name: '性能',
-                axisTick: {
-                    show: true
-                }
+                axisLabel: {
+                    formatter: function (value) {
+                        return value + ' ms';
+                    }
+                },
             }
         ],
         series: [
             {
-                name: '正常',
-                type: 'scatter',
-                symbol: 'circle',
-                data: [
-                    [1, 1],
-                    [2, 2],
-                    [3, 3],
-                    [4, 4],
-                    [5, 5],
-                    [6, 6],
-                    [7, 7]
-                ],
-            }, {
-                name: '警告',
-                type: 'scatter',
-                symbol: 'circle',
-                data: [
-                    [1, 11],
-                    [2, 12],
-                    [3, 13],
-                    [4, 14],
-                    [5, 15],
-                    [6, 16],
-                    [7, 17]
-                ]
-            }, {
-                name: '内容错误',
-                type: 'scatter',
-                symbol: 'circle',
-                data: [
-                    [1, 21],
-                    [2, 22],
-                    [3, 23],
-                    [4, 24],
-                    [5, 25],
-                    [6, 26],
-                    [7, 27]
-                ]
-            }, {
-                name: '页面错误',
-                type: 'scatter',
-                symbol: 'circle',
-                data: [
-                    [1, 31],
-                    [2, 32],
-                    [3, 33],
-                    [4, 34],
-                    [5, 35],
-                    [6, 36],
-                    [7, 37]
-                ]
+                name: '最小延时(ms)',
+                type: 'bar',
+                data: [200, 500, 300, 1000, 1200]
+            },
+            {
+                name: '平均延时(ms)',
+                type: 'bar',
+                data: [40, 700, 200, 100, 900]
+            },
+            {
+                name: '最大延时(ms)',
+                type: 'bar',
+                data: [1200, 50, 1300, 500, 400]
+            },
+            {
+                name: '最小丢包率(%)',
+                type: 'bar',
+                data: [30, 10, 2, 4, 70]
+            },
+            {
+                name: '平均丢包率(%)',
+                type: 'bar',
+                data: [12, 54, 32, 89, 60]
+            },
+            {
+                name: '最大丢包率(%)',
+                type: 'bar',
+                data: [20, 50, 30, 10, 20]
             }
         ]
     };
-    pointsChart.setOption(option);
+    barChart.setOption(option);
 
 });

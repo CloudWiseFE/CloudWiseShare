@@ -1,7 +1,7 @@
 @@include('components/header.html')
 
 <div class="main-container">
-    @@include('components/sidebar.html')
+    @@include('components/sidebar.html', {"page":"operators"})
 
     <div class="main-content">
         <!-- 当前为运行商页面 -->
@@ -101,14 +101,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="chart-box">
-                                <div class="chart-box-body" id="js_points">
+                                <div class="chart-box-body" id="js_bar">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--导出-->
-                <div class="text-right export" style="margin-right: 15px;">
+                <div class="text-right export">
                     <button type="button" class="btn btn-default">导出</button>
                 </div>
                 <!--table 表格-->
