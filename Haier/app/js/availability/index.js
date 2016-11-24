@@ -29,11 +29,5 @@ seajs.use([], function () {
         ]
     };
     pie1.setOption(option1);
-
-
-    $('#myTab a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show')
-    })
-
+    
 });
