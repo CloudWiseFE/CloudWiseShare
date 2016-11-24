@@ -3,7 +3,8 @@
 }
 
 .dashboard .fc_time {
-    height: 187px;
+    height: 167px;
+    margin-top: 10px;
 }
 .dashboard .table-panel .chart-box > h3{
     font-weight: bold;
@@ -37,8 +38,8 @@
     border:1px solid #60bbc7;
     background-color: #60bbc7;
 }
-.dashboard .container-fluid .row .col-md-3,.dashboard .container-fluid .row > .col-md-9{padding-right: 0;}
-.dashboard .container-fluid .row .col-md-3:last-child{padding-right: 15px;}
+.dashboard .container-fluid .row .col-md-3,.dashboard .container-fluid .row > .col-md-9,.dashboard .container-fluid .row .col-md-6{padding-right: 0;}
+.dashboard .container-fluid .row .col-md-3:last-child,.dashboard .container-fluid .row .col-md-6:last-child{padding-right: 15px;}
 
 .dashboard .table-panel .icon-alarmMsg{
      display: inline-block;
@@ -80,4 +81,10 @@
 
 .dashboard .table-panel .icon-yellow{
     background: url('/img/alarm-status/yellow.png') no-repeat;
+}
+.dashboard .set-up > button{
+    position: absolute;
+    top: 270px;
+    color: #666;
+    font-size: 12px;
 }
