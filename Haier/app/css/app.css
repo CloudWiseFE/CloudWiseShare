@@ -171,6 +171,9 @@ body {
     border-right: 1px solid #6ec1cc;
     border-left: 1px solid #6ec1cc;
 }
+.main-header .navbar-nav > li:last-child > a {
+    border-left: 1px solid #6ec1cc;
+}
 
 .main-header .navbar-nav > li > a:focus,
 .main-header .navbar-nav > li > a:hover,
@@ -184,13 +187,13 @@ body {
     color: #09717f;
 }
 
-.main-header .navbar-right a {
+.main-header .navbar-right > a {
     border-left: 1px solid #6ec1cc;
 }
 .main-header .navbar-right a span{
     font-size: 16px;
 }
-.icon-flag {
+.main-header .icon-flag {
     background: url('/img/flag/china.png') no-repeat;
     width: 17px;
     height: 17px;
@@ -198,7 +201,52 @@ body {
     vertical-align: middle;
 
 }
+.main-header .dropdown-menu.users {margin-right: 15px;padding-bottom:10px;}
+.main-header .dropdown-menu>li>a{ color: #61616;}
+.main-header .dropdown-menu>li>a > .icon-users {
+    background: url('/img/icon-users.png') no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 10px;
 
+}
+
+.main-header .dropdown-menu>li>a > .icon-personal {
+    background-position: 0 0;
+}
+.main-header .dropdown-menu>li>a > .icon-psw {
+    background-position: 0 -20px;
+}
+.main-header .dropdown-menu>li>a > .icon-notice {
+    background-position: 0 -42px;
+}
+
+.main-header .dropdown-menu>li>a > .icon-notice {
+    background-position: 0 -42px;
+}
+.main-header .dropdown-menu>li>a > .icon-logout {
+    background-position: 0 -63px;
+}
+
+
+.main-header .dropdown-menu>li:hover>a > .icon-personal {
+    background-position: -25px 0;
+}
+.main-header .dropdown-menu>li:hover>a > .icon-psw {
+    background-position: -25px -20px;
+}
+.main-header .dropdown-menu>li:hover>a > .icon-notice {
+    background-position: -25px -42px;
+}
+
+.main-header .dropdown-menu>li:hover>a > .icon-notice {
+    background-position: -25px -42px;
+}
+.main-header .dropdown-menu>li:hover>a > .icon-logout {
+    background-position: -25px -63px;
+}
 .main-container {
     position: relative;
     background-color: #fafafa;
@@ -493,7 +541,7 @@ float: right;
     background: #fafafa;
 }
 
-.dashboard .time-panel > .dropdown-menu>li>a:focus,.dashboard .time-panel > .dropdown-menu>li>a:hover{
+.dashboard .time-panel > .dropdown-menu>li>a:focus,.dashboard .time-panel > .dropdown-menu>li>a:hover,.dashboard .time-panel > .dropdown-menu>li>a.active{
     color: #fff;
     border-radius: 2px;
     border:1px solid #60bbc7;
