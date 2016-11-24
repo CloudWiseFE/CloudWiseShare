@@ -1,0 +1,237 @@
+/*==============================================================================*/
+/* 重写bootstrap  */
+/*==============================================================================*/
+.dropdown-menu {
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px;
+}
+
+.btn-group > .btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+/*==============================================================================*/
+/*  reset  */
+/*==============================================================================*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*==============================================================================*/
+/* 自定义 RESET.CSS  */
+/*==============================================================================*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+body {
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: #ffffff;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/*==============================================================================*/
+/* layout  */
+/*==============================================================================*/
+.main-header {
+    background-color: #50acb7;
+    background: url('/img/main-header-bg.png');
+    min-height: 56px;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.main-header .container-fluid {
+    padding-right: 0;
+}
+
+.main-header .navbar-brand {
+    height: 56px;
+    width: 240px;
+    /*border-right: 1px solid #6ec1cc;*/
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0;
+}
+
+.main-logo {
+    display: inline-block;
+}
+
+.main-header .navbar-nav > li > a {
+    color: #ffffff;
+    padding: 18px 23px;
+}
+
+.main-header .navbar-nav > li:first-child > a {
+    border-right: 1px solid #6ec1cc;
+    border-left: 1px solid #6ec1cc;
+}
+
+.main-header .navbar-nav > li > a:focus,
+.main-header .navbar-nav > li > a:hover,
+.main-header .navbar-nav > .active > a,
+.main-header .navbar-nav > .active > a:focus,
+.main-header .navbar-nav > .active > a:hover,
+.main-header .navbar-nav > .open > a,
+.main-header .navbar-nav > .open > a:focus,
+.main-header .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    color: #09717f;
+}
+
+.main-header .navbar-right a {
+    border-left: 1px solid #6ec1cc;
+}
+
+.main-container {
+    position: relative;
+    background-color: #fafafa;
+    padding-top: 72px;
+    padding-left: 100px;
+}
+
+.main-content {
+    /*position: absolute;
+    left: 100px;
+    right: 0;
+    top: 72px;*/
+}
+
+.main-content-title {
+}
+
+.main-content-title:before,
+.main-content-title:after {
+    content: '';
+    display: table;
+}
+
+.main-content-title:after {
+    clear: both;
+}
+.main-sidebar {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    width: 100px;
+}
+
+.main-sidebar .nav > li > a {
+    color: #666666;
+    padding: 16px 10px;
+}
+
+.main-sidebar .nav > li.active > a {
+    background-color: #60bbc7;
+    color: #ffffff;
+}
+
+.main-nav-title {
+    font-size: 13px;
+}
+
+/*==============================================================================*/
+/* 业务组件  */
+/*==============================================================================*/
+.chart-box {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 12px;
+}
+
+.chart-box-title {
+    font-size: 13px;
+}
+
+.chart-box-title:before, .chart-box-title:after {
+    content: '';
+    display: table;
+}
+
+.chart-box-title:after {
+    clear: both;
+}
+
+.chart-box-body {
+    height: 220px;
+}
+/*==============================================================================*/
+/* 页面page */
+/*==============================================================================*/
+.dashboard .fc_map {
+    height: 450px;
+}
+
+.dashboard .fc_time {
+    height: 187px;
+}

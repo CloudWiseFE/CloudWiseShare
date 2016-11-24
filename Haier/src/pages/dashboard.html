@@ -1,0 +1,95 @@
+@@include('components/header.html')
+
+<div class="main-container">
+    @@include('components/sidebar.html')
+
+    <div class="main-content">
+        <!-- 当前为dashboard页面 -->
+        <div class="dashboard">
+            <div class="main-content-title">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">全部分组</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">全部分组</a>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Action</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content-body">
+                <!-- 可用性 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">可用性</div>
+                                <div class="chart-box-body" id="js_pie1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">页面性能</div>
+                                <div class="chart-box-body" id="js_pie2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">内容可用性</div>
+                                <div class="chart-box-body" id="js_pie3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">资源性能</div>
+                                <div class="chart-box-body" id="js_radar4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 首屏时间 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="chart-box">
+                                <div class="chart-box-title">首屏时间</div>
+                                <div class="chart-box-body fc_map" id="js_map">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="chart-box">
+                                <div class="chart-box-title">运营商首屏时间统计（ms）</div>
+                                <div class="chart-box-body fc_time" id="js_fc_time">
+                                </div>
+                            </div>
+                            <div class="chart-box">
+                                <div class="chart-box-title">首屏时间最慢Top15（ms）</div>
+                                <div class="chart-box-body" id="js_top10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('components/footer.html', {"page":"dashboard"})
+

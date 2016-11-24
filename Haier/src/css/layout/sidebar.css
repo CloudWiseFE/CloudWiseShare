@@ -1,0 +1,22 @@
+.main-sidebar {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    width: 100px;
+}
+
+.main-sidebar .nav > li > a {
+    color: #666666;
+    padding: 16px 10px;
+}
+
+.main-sidebar .nav > li.active > a {
+    background-color: #60bbc7;
+    color: #ffffff;
+}
+
+.main-nav-title {
+    font-size: 13px;
+}

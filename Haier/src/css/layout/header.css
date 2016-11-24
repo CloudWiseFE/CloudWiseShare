@@ -1,0 +1,52 @@
+.main-header {
+    background-color: #50acb7;
+    background: url('/img/main-header-bg.png');
+    min-height: 56px;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.main-header .container-fluid {
+    padding-right: 0;
+}
+
+.main-header .navbar-brand {
+    height: 56px;
+    width: 240px;
+    /*border-right: 1px solid #6ec1cc;*/
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0;
+}
+
+.main-logo {
+    display: inline-block;
+}
+
+.main-header .navbar-nav > li > a {
+    color: #ffffff;
+    padding: 18px 23px;
+}
+
+.main-header .navbar-nav > li:first-child > a {
+    border-right: 1px solid #6ec1cc;
+    border-left: 1px solid #6ec1cc;
+}
+
+.main-header .navbar-nav > li > a:focus,
+.main-header .navbar-nav > li > a:hover,
+.main-header .navbar-nav > .active > a,
+.main-header .navbar-nav > .active > a:focus,
+.main-header .navbar-nav > .active > a:hover,
+.main-header .navbar-nav > .open > a,
+.main-header .navbar-nav > .open > a:focus,
+.main-header .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    color: #09717f;
+}
+
+.main-header .navbar-right a {
+    border-left: 1px solid #6ec1cc;
+}

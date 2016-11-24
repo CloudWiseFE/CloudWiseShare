@@ -1,0 +1,22 @@
+.chart-box {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 12px;
+}
+
+.chart-box-title {
+    font-size: 13px;
+}
+
+.chart-box-title:before, .chart-box-title:after {
+    content: '';
+    display: table;
+}
+
+.chart-box-title:after {
+    clear: both;
+}
+
+.chart-box-body {
+    height: 220px;
+}

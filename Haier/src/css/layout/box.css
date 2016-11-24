@@ -1,0 +1,26 @@
+.main-container {
+    position: relative;
+    background-color: #fafafa;
+    padding-top: 72px;
+    padding-left: 100px;
+}
+
+.main-content {
+    /*position: absolute;
+    left: 100px;
+    right: 0;
+    top: 72px;*/
+}
+
+.main-content-title {
+}
+
+.main-content-title:before,
+.main-content-title:after {
+    content: '';
+    display: table;
+}
+
+.main-content-title:after {
+    clear: both;
+}
