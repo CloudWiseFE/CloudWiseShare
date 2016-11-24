@@ -1,0 +1,25 @@
+.main-content-title .btn-group{margin-right: 10px;}
+
+.main-content-title .btn .caret{
+  color: #828282;
+}
+.main-content-title .icon-redDot, .main-content-title .icon-greenDot{
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ff0000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.main-content-title .icon-greenDot{
+  background: #0aa70a;
+}
+
+.main-content-title  .dropdown-toggle-detection{
+  width: 270px;
+  text-align: left;
+}
+.main-content-title  .dropdown-menu-detection{
+  width: 295px;
+}
