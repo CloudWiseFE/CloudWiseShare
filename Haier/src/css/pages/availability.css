@@ -24,3 +24,12 @@
 .availability .table > tbody > tr> td{
   text-align: center;
 }
+.availability .table > thead > tr> th,.availability .table > tbody > tr> td{
+  padding: 20px 8px;
+}
+.availability .table > thead > tr> th{
+  border-right: 1px solid #c5d7e0;
+}
+.availability .table > thead > tr> th:last-child{
+  border-right: none;
+}
